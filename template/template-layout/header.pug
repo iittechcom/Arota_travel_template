@@ -1,39 +1,52 @@
 mixin menu-item(text)
-      li.menu-item
-         a.menu-link= text
+      li.menu__item
+         a.menu__link= text
       if block
         block
 
+mixin des-item(src, text)
+      .des-item&attributes(attributes)
+         img(src=src, alt="")
+         .des-text
+            span= text
 
 
 header.header
-   .logo
-      img(src="./image/logo.png", alt="")
-   nav.nav-menu
-      ul.menu
-          +menu-item("Destinations")
-          +menu-item("EXPERIENCES")
-          +menu-item("Incentives")
-          +menu-item("About us")
-          +menu-item("News")
-          +menu-item("Sustainability")
-          +menu-item("Agent Login")
-      .search-bar
-         form(action="")
-            .search-icon
-               span(class="far fa-search")
-            .input-group
-               input(type="text" class="searchtext")
-               .input-group-append
-                  .input-group-text
-                     span(class="far fa-search")
-      .language-menu
-         button(data-toggle="dropdown") VI
-         ul.dropdown-menu
-            li.dropdown-item
-               a(href="/")  VI
-            li.dropdown-item
-               a(href="/")  EN
+   .container
+      .logo
+         img(src="./image/logo.png", alt="")
+      nav.nav-menu
+         ul.menu
+               +menu-item("Destinations")
+                  .menu-child
+                     .des-grid
+                        +des-item("./image/menu/vietnam.jpg", "VIETNAM")
+                        +des-item("./image/menu/cambodia.jpg", "CAMBODIA")
+                        +des-item("./image/menu/laos.jpg", "LAOS")
+                        +des-item("./image/menu/thailand.jpg", "THAILAND")
+                        +des-item("./image/menu/myanmar.jpg", "MYANMAR")
+               +menu-item("EXPERIENCES")
+               +menu-item("Incentives")
+               +menu-item("About us")
+               +menu-item("News")
+               +menu-item("Sustainability")
+               +menu-item("Agent Login")
+         .menu-mobile
+         .search-box
+            form(action="")
+               a(class="search-icon" href="javascript:void(0)")
+                  span(class="far fa-search")
+               .input-group.search-bar
+                  input(type="text" class="form-control")
+                  .input-group-append
+                        span(class="far fa-search input-group-text")
+         .language-menu
+            button(data-toggle="dropdown" type="button" class="language-btn") VI
+            ul.dropdown-menu
+               li.dropdown-item
+                  a(href="/")  VI
+               li.dropdown-item
+                  a(href="/")  EN
 
 
 

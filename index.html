@@ -30,36 +30,55 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo"><img src="./image/logo.png" alt=""></div>
-      <nav class="nav-menu">
-        <ul class="menu">
-              <li class="menu-item"><a class="menu-link">Destinations</a></li>
-              <li class="menu-item"><a class="menu-link">EXPERIENCES</a></li>
-              <li class="menu-item"><a class="menu-link">Incentives</a></li>
-              <li class="menu-item"><a class="menu-link">About us</a></li>
-              <li class="menu-item"><a class="menu-link">News</a></li>
-              <li class="menu-item"><a class="menu-link">Sustainability</a></li>
-              <li class="menu-item"><a class="menu-link">Agent Login</a></li>
-        </ul>
-        <div class="search-bar">
-          <form action="">
-            <div class="search-icon"><span class="far fa-search"></span></div>
-            <div class="input-group">
-              <input class="searchtext" type="text">
-              <div class="input-group-append">
-                <div class="input-group-text"><span class="far fa-search"></span></div>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="language-menu">
-          <button data-toggle="dropdown">VI</button>
-          <ul class="dropdown-menu">
-            <li class="dropdown-item"><a href="/"> VI</a></li>
-            <li class="dropdown-item"><a href="/"> EN</a></li>
+      <div class="container">
+        <div class="logo"><img src="./image/logo.png" alt=""></div>
+        <nav class="nav-menu">
+          <ul class="menu">
+                <li class="menu__item"><a class="menu__link">Destinations</a></li>
+                <div class="menu-child">
+                  <div class="des-grid">
+                        <div class="des-item"><img src="./image/menu/vietnam.jpg" alt="">
+                          <div class="des-text"><span>VIETNAM</span></div>
+                        </div>
+                        <div class="des-item"><img src="./image/menu/cambodia.jpg" alt="">
+                          <div class="des-text"><span>CAMBODIA</span></div>
+                        </div>
+                        <div class="des-item"><img src="./image/menu/laos.jpg" alt="">
+                          <div class="des-text"><span>LAOS</span></div>
+                        </div>
+                        <div class="des-item"><img src="./image/menu/thailand.jpg" alt="">
+                          <div class="des-text"><span>THAILAND</span></div>
+                        </div>
+                        <div class="des-item"><img src="./image/menu/myanmar.jpg" alt="">
+                          <div class="des-text"><span>MYANMAR</span></div>
+                        </div>
+                  </div>
+                </div>
+                <li class="menu__item"><a class="menu__link">EXPERIENCES</a></li>
+                <li class="menu__item"><a class="menu__link">Incentives</a></li>
+                <li class="menu__item"><a class="menu__link">About us</a></li>
+                <li class="menu__item"><a class="menu__link">News</a></li>
+                <li class="menu__item"><a class="menu__link">Sustainability</a></li>
+                <li class="menu__item"><a class="menu__link">Agent Login</a></li>
           </ul>
-        </div>
-      </nav>
+          <div class="menu-mobile"></div>
+          <div class="search-box">
+            <form action=""><a class="search-icon" href="javascript:void(0)"><span class="far fa-search"></span></a>
+              <div class="input-group search-bar">
+                <input class="form-control" type="text">
+                <div class="input-group-append"><span class="far fa-search input-group-text"></span></div>
+              </div>
+            </form>
+          </div>
+          <div class="language-menu">
+            <button class="language-btn" data-toggle="dropdown" type="button">VI</button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="/"> VI</a></li>
+              <li class="dropdown-item"><a href="/"> EN</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <div class="banner-page">
       <div class="banner__item">
