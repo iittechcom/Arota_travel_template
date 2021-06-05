@@ -4,9 +4,6 @@ ul {
 a:hover {
   text-decoration: none; }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1010px; } }
 /* style */
 .banner__page img {
   height: 436px;
@@ -15,7 +12,8 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #fff;
   width: 100%; }
 .banner__title {
@@ -32,7 +30,8 @@ a:hover {
 .box {
   margin-top: 40px; }
   .box__title {
-    font-size: 35px;
+    text-transform: uppercase;
+    font-size: 28px;
     margin-bottom: 20px;
     font-weight: 700; }
   .box__des {
@@ -46,8 +45,12 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative; }
   .nation__item::before {
     content: "";
@@ -67,10 +70,12 @@ a:hover {
     color: #fff;
     font-weight: 600;
     text-decoration: none;
+    -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
     text-shadow: 0px 0px 1px #333; }
     .nation__name a:hover {
       color: #FEB012;
+      -webkit-transition: all 0.3s linear;
       transition: all 0.3s linear; }
 .nation__info {
   margin-left: auto;
@@ -85,6 +90,7 @@ a:hover {
       font-weight: 600;
       color: #fff;
       border-color: #FEB012;
+      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease; }
     .nation__info li a {
       display: block;
@@ -94,6 +100,7 @@ a:hover {
       padding: 8px 0;
       border-bottom: 2px solid transparent;
       text-decoration: none;
+      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease; }
 
 #recevie_new {
@@ -118,50 +125,146 @@ a:hover {
 
 /* destinations cities */
 .citi-caption .banner__title {
-  text-align: left;
   font-style: italic;
   font-weight: 800; }
+
+.box section {
+  margin-bottom: 35px; }
 
 .box__content .figure {
   display: block;
   text-align: center; }
+  .box__content .figure img {
+    width: 90%;
+    height: 360px; }
 
-.city__list {
+.collapse__list {
   margin-bottom: 30px; }
-.city__item {
+.collapse__item {
   padding: 12px 0;
   border-bottom: 1px solid #A6A6A6; }
-  .city__item:last-child {
+  .collapse__item:last-child {
     border-bottom: 0; }
-  .city__item:first-child .city__des {
-    display: block; }
-.city__title {
+.collapse__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer; }
+.collapse__name {
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 30px;
+  text-decoration: none; }
+.collapse__des {
+  padding: 20px 0 20px;
+  margin-left: 60px; }
+.collapse__text {
+  font-size: 15px;
+  text-align: justify; }
+
 .city__icon {
   width: 30px;
   height: 30px;
   border-radius: 5px;
   background-color: #FEB012;
   color: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 18px; }
-.city__name {
-  font-size: 15px;
-  font-weight: 700;
-  margin-left: 30px;
-  text-decoration: none; }
-.city__des {
-  padding: 20px 0 25px;
-  margin-left: 60px;
+
+.city__icon .fa-plus {
   display: none; }
-  .city__des.show {
+
+.collapsed .city__icon .fa-minus {
+  display: none; }
+.collapsed .fa-plus {
+  display: block; }
+
+#accordion .collapsing {
+  position: static;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear; }
+
+/* --- destination travel info page ----- */
+.info__des {
+  margin-left: 80px; }
+
+.info__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #FEB012;
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px; }
+
+/* ----- destination detail page ---- */
+.intro-video {
+  text-align: center; }
+
+.disc-img {
+  margin-bottom: 20px; }
+
+.disc-text {
+  font-size: 15px;
+  text-align: justify; }
+  .disc-text h5 {
+    margin-bottom: 20px; }
+
+.tour-slider .owl-stage-outer {
+  padding: 20px 0; }
+
+.tour-slider .center {
+  -webkit-transform: scaleX(1.5) scaleY(1.1);
+          transform: scaleX(1.5) scaleY(1.1);
+  z-index: 50; }
+  .tour-slider .center .tour__img img {
+    opacity: 1; }
+  .tour-slider .center .tour__detail {
     display: block; }
-.city__text {
-  font-size: 14px; }
+
+.tour--name {
+  color: #FEB012;
+  font-weight: 600; }
+
+.tour-slider .tour__item {
+  position: relative; }
+
+.tour__item .tour__detail {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: none;
+  -webkit-transform: none;
+          transform: none;
+  background: #00000073;
+  color: #fff;
+  width: 78%;
+  font-size: 12px;
+  padding: 15px; }
+
+.tour-slider .tour__img img {
+  height: 300px;
+  max-width: 100%;
+  opacity: 0.6; }
 
 /* responsive */
 @media (max-width: 1023px) {
@@ -191,6 +294,9 @@ a:hover {
     height: 320px; }
 
   #recevie_new {
-    padding: 10px; } }
+    padding: 10px; }
+
+  .collapse__des {
+    margin-left: 20px; } }
 
 /*# sourceMappingURL=page.css.map */
