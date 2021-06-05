@@ -327,6 +327,7 @@ img {
             width: 45px;
             margin-right: 15px; }
 
+<<<<<<< HEAD
 .destination {
   background-image: url(../image/banner/myanmar.jpg);
   background-size: 100%;
@@ -456,3 +457,6 @@ img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+=======
+/*# sourceMappingURL=style.css.map */
+>>>>>>> bfb0717800a5757d70dd5ced70e8766ee3a93183
