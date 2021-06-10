@@ -1,6 +1,23 @@
 $(document).ready(function() {
-    $(".city__title").click(function() {
-        $(".city__icon .fas").attr("class", "fas fa-plus");
-        $(this).find(".city__icon .fas").toggleClass("fa-minus fa-plus");
-    });
+    $('.tour-slider').owlCarousel({
+        loop: true,
+        center: true,
+        margin: 0,
+        nav: false,
+        dots: false,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 3
+            }
+        }
+
+    })
+
 })
