@@ -253,8 +253,6 @@ a:hover {
   bottom: 10px;
   left: 0;
   display: none;
-  -webkit-transform: none;
-          transform: none;
   background: #00000073;
   color: #fff;
   width: 78%;

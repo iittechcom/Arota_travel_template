@@ -300,6 +300,7 @@ a {
 .tour-slider .center {
     transform: scaleX(1.5) scaleY(1.1);
     z-index: 50;
+    // width: 550px !important;
     .tour__img img {
         opacity: 1;
     }
@@ -322,7 +323,7 @@ a {
     bottom: 10px;
     left: 0;
     display: none;
-    transform: none;
+    // transform: scaleX(0.8) scaleY(1);
     background: #00000073;
     color: #fff;
     width: 78%;
