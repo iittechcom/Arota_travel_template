@@ -3,6 +3,8 @@ $bg-light: #fff;
 $bg-dark: #000;
 $bg-yellow: #FEB012;
 $bg-before: rgba(0, 0, 0, 0.87);
+$bg-yellow_before: #e9a41986;
+$bg-light_before: #ffffff86;
 $text-yellow: #FEB012;
 $text-dark: #000;
 $text-light: #fff;
@@ -183,7 +185,7 @@ img {
                 text-transform: uppercase;
                 a {
                     color: $bg-light;
-                    font-size: 1.25rem;
+                    font-size: 1.05rem;
                 }
                 span {
                     color: #FFF;
@@ -520,7 +522,7 @@ img {
                 }
             }
             .content-desc {
-                height: 80px;
+                height: 78px;
                 overflow: hidden;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 4;
@@ -565,12 +567,17 @@ img {
 
 // about index
 .about_index {
+    background: url(../image/background/bg-why_us.png);
+    background-position: center 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
     .grid {
         display: grid;
         gap: 10px;
         grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+        grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
         .item {
+            position: relative;
             &:nth-child(1) {
                 grid-column: 1/2;
                 grid-row: 1/5;
@@ -609,6 +616,264 @@ img {
                 height: 100%;
                 object-fit: cover;
             }
+            .desc {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                width: 100%;
+                height: 100%;
+                padding: 15px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                background: $bg-yellow_before;
+                color: $text-light;
+                i {
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+// type-tours
+.type-tours {
+    background: url(../image/background/bg-type-tour.jpg.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0%;
+        background: $bg-before
+    }
+    .section-title {
+        color: $text-light;
+    }
+    .grid {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 33.3%, 33.3%, 33.3%;
+        grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+        .item {
+            position: relative;
+            &:nth-child(1) {
+                grid-column: 1/2;
+                grid-row: 1/5;
+            }
+            &:nth-child(2) {
+                grid-column: 2/3;
+                grid-row: 2/7;
+            }
+            &:nth-child(3) {
+                grid-column: 3/4;
+                grid-row: 4/12;
+            }
+            &:nth-child(4) {
+                grid-column: 1/2;
+                grid-row: 5/13;
+            }
+            &:nth-child(5) {
+                grid-column: 2/3;
+                grid-row: 7/14;
+            }
+            // &:nth-child(6) {
+            //     grid-column: 3/4;
+            //     grid-row: 7/12;
+            // }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .desc {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                width: 100%;
+                height: 100%;
+                padding: 15px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                // background: $bg-yellow_before;
+                color: $text-light;
+                justify-content: space-around;
+                h3 {
+                    font-size: 1.05rem;
+                    text-transform: uppercase;
+                }
+                i {
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+// experience
+.experience {
+    padding-bottom: 100px;
+    .container-f {
+        overflow: hidden;
+    }
+    .p-0 {
+        overflow: hidden;
+    }
+    a:hover {
+        text-decoration: none;
+        color: $text-dark;
+    }
+    .owl-item {
+        width: 230px!important;
+        .item {
+            position: relative;
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                background: $bg-light_before;
+                z-index: 1;
+            }
+        }
+    }
+    .owl-item.active.center {
+        width: 300px !important;
+        transition: all .5s ease-in;
+        .item {
+            position: relative;
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                background: transparent;
+                z-index: 1;
+            }
+        }
+        img {
+            border-bottom: 3px solid $bg-yellow;
+        }
+    }
+    .owl-stage-outer {
+        overflow: visible!important;
+    }
+    .owl-item {
+        transition: all .5s ease-in;
+        img {
+            height: 250px;
+        }
+        .desc {
+            // padding: 15px;
+            h3 {
+                text-transform: uppercase;
+                padding: 0;
+                margin: 0;
+                font-size: 1.05rem;
+                font-weight: 700;
+                padding: 15px 0px 15px 15px;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 7px;
+                    height: 15px;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(0px, -5px);
+                    background: $bg-yellow;
+                }
+                &:hover {
+                    color: $text-yellow;
+                }
+            }
+            .content-desc {
+                padding: 15px 0px;
+                border-top: 2px solid $bg-dark;
+                border-bottom: 2px solid $bg-dark;
+                height: 80px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: initial;
+                -webkit-line-clamp: 3;
+            }
+        }
+    }
+    .owl-next {
+        right: -25%;
+        top: 30%;
+        i {
+            color: $bg-dark;
+        }
+    }
+    .owl-prev {
+        top: 30%;
+        i {
+            color: $bg-before;
+        }
+    }
+}
+
+// article index
+.article_index {
+    .item {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+        }
+        img {
+            height: 200px;
+        }
+    }
+    .desc {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 0%;
+        padding: 20px;
+        z-index: 11;
+        color: #fff;
+        a {
+            transition: all .5s ease-in;
+            color: $text-light;
+            h3 {
+                font-size: 1.05rem;
+            }
+            &:hover {
+                text-decoration: none;
+                color: $text-yellow;
+            }
+        }
+    }
+}
+
+footer {
+    background: url(../image/background/cambodia_travel_guide_.png);
+    background-size: 100%;
+    .top-footer {
+        .row {
+            width: 100%;
         }
     }
 }
