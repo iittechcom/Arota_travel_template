@@ -566,6 +566,7 @@ img {
   font-size: 16px;
   background-color: #ebebeb; }
 .inser__title {
+  display: block;
   padding-bottom: 20px;
   border-bottom: 2px solid #feaf12;
   margin-bottom: 25px;

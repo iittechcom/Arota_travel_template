@@ -694,6 +694,7 @@ img {
         background-color: $bg-gray;
     }
     &__title {
+        display: block;
         padding-bottom: 20px;
         border-bottom: 2px solid $bg-yellow;
         margin-bottom: 25px;
