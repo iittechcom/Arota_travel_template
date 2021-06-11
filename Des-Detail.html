@@ -39,7 +39,7 @@
     </div>
 
     <main>
-        <div class=" box">
+        <section class="box">
             <section class="intro">
                 <div class="container">
                     <h3 class="box__title text-center">Charming vietnam</h3>
@@ -85,7 +85,7 @@
                 </div>
             </section>
 
-            <section class="nation-tour">
+            <section class="nation-tour_wp">
                 <div class="container">
                     <h3 class="box__title text-center">VIETNAM TOUR</h3>
                     <div class="box__des text-center">
@@ -100,12 +100,22 @@
                             </div>
                             <div class="tour__detail">
                                 <div class="tour--name">
-                                    VIETNAM iNSIDER
+                                    VIETNAM INSIDER
                                 </div>
                                 <div class="tour--text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum deleniti alias nihil dolorum eaque cumque, sunt itaque unde, natus inventor
                                 </div>
+
                             </div>
+                            <div class="nav-slider">
+                                <div class="nav-next">
+                                    <i class="fas fa-caret-right    "></i>
+                                </div>
+                                <div class="nav-prev">
+                                    <i class="fas fa-caret-left    "></i>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="tour__item">
                             <div class="tour__img">
@@ -113,7 +123,7 @@
                             </div>
                             <div class="tour__detail">
                                 <div class="tour--name">
-                                    VIETNAM iNSIDER
+                                    VIETNAM INSIDER
                                 </div>
                                 <div class="tour--text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum deleniti alias nihil dolorum eaque cumque, sunt itaque unde, natus inventor
@@ -124,9 +134,10 @@
                                     <i class="fas fa-caret-right    "></i>
                                 </div>
                                 <div class="nav-prev">
-
+                                    <i class="fas fa-caret-left    "></i>
                                 </div>
                             </div>
+
                         </div>
                         <div class="tour__item">
                             <div class="tour__img">
@@ -139,82 +150,326 @@
                                 <div class="tour--text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum deleniti alias nihil dolorum eaque cumque, sunt itaque unde, natus inventor
                                 </div>
+
                             </div>
+                            <div class="nav-slider">
+                                <div class="nav-next">
+                                    <i class="fas fa-caret-right    "></i>
+                                </div>
+                                <div class="nav-prev">
+                                    <i class="fas fa-caret-left    "></i>
+                                </div>
+                            </div>
+
+
                         </div>
+                    </div>
+                    <div class="all-tour view-all">
+                        <a href="#">ALL TOURs <i class="fas fa-angle-double-right    "></i></a>
                     </div>
                 </div>
             </section>
 
+            <section class="tour-tab_wp">
+                <div class="nav_wp">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#home">Travel Infomation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#menu1">Top Cities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#menu2">Hotels</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane container active" id="home">
+                        <ul class="info-list collapse-list" id="accordion">
+                            <li class="collapse__item">
+                                <div class="collapse__title" data-toggle="collapse" data-target="#info1">
+                                    <span class="info__icon">
+                                           <i class="fab fa-cc-visa"></i>
+                                             </span>
+                                    <a class="collapse__name" href="javascript:void(0)">VISA</a>
+                                </div>
+                                <div class="collapse__des info__des collapse show" id="info1" data-parent="#accordion">
+                                    <div class="collapse__text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa neque cum blanditiis alias quam nam, dignissimos provident molestias libero?</p>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nemo esse reprehenderit sequi obcaecati, neque labore nam perferendis
+                                            praesentium minus, minima maxime sapiente quas asperiores autem corporis explicabo culpa eveniet.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quos incidunt labore optio quia provident vitae nobis odit voluptate rem. optio quia provident vitae nobis odit voluptate rem.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collapse__item">
+                                <div class="collapse__title collapsed" data-toggle="collapse" data-target="#info2">
+                                    <span class="info__icon">
+                                        <i class="fas fa-bus-alt"></i>
+                                           </span>
+                                    <a class="collapse__name" href="javascript:void(0)">Transportation</a>
+                                </div>
+                                <div class="collapse__des info__des collapse " id="info2" data-parent="#accordion">
+                                    <div class="collapse__text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa neque cum blanditiis alias quam nam, dignissimos provident molestias libero?</p>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nemo esse reprehenderit sequi obcaecati, neque labore nam perferendis
+                                            praesentium minus, minima maxime sapiente quas asperiores autem corporis explicabo culpa eveniet.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quos incidunt labore optio quia provident vitae nobis odit voluptate rem. optio quia provident vitae nobis odit voluptate rem.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collapse__item">
+                                <div class="collapse__title collapsed" data-toggle="collapse" data-target="#info3">
+                                    <span class="info__icon">
+                                     <i class="far fa-calendar-check"></i>
+                                        </span>
+                                    <a class="collapse__name" href="javascript:void(0)">Best time to travel</a>
+                                </div>
+                                <div class="collapse__des info__des collapse " id="info3" data-parent="#accordion">
+                                    <div class="collapse__text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa neque cum blanditiis alias quam nam, dignissimos provident molestias libero?</p>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nemo esse reprehenderit sequi obcaecati, neque labore nam perferendis
+                                            praesentium minus, minima maxime sapiente quas asperiores autem corporis explicabo culpa eveniet.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quos incidunt labore optio quia provident vitae nobis odit voluptate rem. optio quia provident vitae nobis odit voluptate rem.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collapse__item">
+                                <div class="collapse__title collapsed" data-toggle="collapse" data-target="#info4">
+                                    <span class="info__icon">
+                                  <i class="far fa-lightbulb"></i>
+                                     </span>
+                                    <a class="collapse__name" href="javascript:void(0)">Travel Tips</a>
+                                </div>
+                                <div class="collapse__des info__des collapse " id="info4" data-parent="#accordion">
+                                    <div class="collapse__text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa neque cum blanditiis alias quam nam, dignissimos provident molestias libero?</p>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nemo esse reprehenderit sequi obcaecati, neque labore nam perferendis
+                                            praesentium minus, minima maxime sapiente quas asperiores autem corporis explicabo culpa eveniet.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quos incidunt labore optio quia provident vitae nobis odit voluptate rem. optio quia provident vitae nobis odit voluptate rem.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane container fade" id="menu1">
+                        <ul class="city__list collapse-list" id="accordion1">
+                            <li class="collapse__item">
+                                <div class="collapse__title" data-toggle="collapse" data-target="#city1">
+                                    <span class="city__icon"><i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i></span>
+                                    <a class="collapse__name" href="javascript:void(0)">HANOI</a>
+                                </div>
+                                <div class="collapse__des collapse show" id="city1" data-parent="#accordion1">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="./image/citis/hanoi.jpg" alt="">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="collapse__text">
+                                                <h5>HA NOI</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa neque cum blanditiis alias quam nam, dignissimos provident molestias libero?</p>
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nemo esse reprehenderit sequi obcaecati, neque labore nam perferendis
+                                                    praesentium minus, minima maxime sapiente quas asperiores autem corporis explicabo culpa eveniet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collapse__item">
+                                <div class="collapse__title collapsed" data-toggle="collapse" data-target="#city2">
+                                    <span class="city__icon">
+                                            <i class="fas fa-plus"></i>
+                                            <i class="fas fa-minus"></i>
+                                        </span>
+                                    <a class="collapse__name" href="javascript:void(0)">SAPA</a>
+                                </div>
+                                <div class="collapse__des collapse" id="city2" data-parent="#accordion1">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="./image/citis/hanoi.jpg" alt="">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="collapse__text">
+                                                <h5>SAPA</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa neque cum blanditiis alias quam nam, dignissimos provident molestias libero?</p>
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nemo esse reprehenderit sequi obcaecati, neque labore nam perferendis
+                                                    praesentium minus, minima maxime sapiente quas asperiores autem corporis explicabo culpa eveniet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collapse__item">
+                                <div class="collapse__title collapsed" data-toggle="collapse" data-target="#city3">
+                                    <span class="city__icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                                    <a class="collapse__name" href="javascript:void(0)">SAPA</a>
+                                </div>
+                                <div class="collapse__des collapse" id="city3" data-parent="#accordion1">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="./image/citis/hanoi.jpg" alt="">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="collapse__text">
+                                                <h5>SAPA</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa neque cum blanditiis alias quam nam, dignissimos provident molestias libero?</p>
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nemo esse reprehenderit sequi obcaecati, neque labore nam perferendis
+                                                    praesentium minus, minima maxime sapiente quas asperiores autem corporis explicabo culpa eveniet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collapse__item">
+                                <div class="collapse__title collapsed" data-toggle="collapse" data-target="#c4">
+                                    <span class="city__icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                                    <a class="collapse__name" href="javascript:void(0)">SAPA</a>
+                                </div>
+                                <div class="collapse__des collapse" id="c4" data-parent="#accordion1">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="./image/citis/hanoi.jpg" alt="">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="collapse__text">
+                                                <h5>SAPA</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa neque cum blanditiis alias quam nam, dignissimos provident molestias libero?</p>
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nemo esse reprehenderit sequi obcaecati, neque labore nam perferendis
+                                                    praesentium minus, minima maxime sapiente quas asperiores autem corporis explicabo culpa eveniet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collapse__item">
+                                <div class="collapse__title collapsed" data-toggle="collapse" data-target="#c5">
+                                    <span class="city__icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                                    <a class="collapse__name" href="javascript:void(0)">SAPA</a>
+                                </div>
+                                <div class="collapse__des collapse" id="c5" data-parent="#accordion1">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="./image/citis/hanoi.jpg" alt="">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="collapse__text">
+                                                <h5>SAPA</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa neque cum blanditiis alias quam nam, dignissimos provident molestias libero?</p>
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nemo esse reprehenderit sequi obcaecati, neque labore nam perferendis
+                                                    praesentium minus, minima maxime sapiente quas asperiores autem corporis explicabo culpa eveniet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-pane  fade" id="menu2">
+                        <div class="experience">
+                            <div class="container-f">
+                                <div class="row">
+                                    <div class="col-md-2">
+
+                                    </div>
+                                    <div class="col-md-10 p-0">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="owl-experience owl-carousel owl-theme">
+                                                    <a href="#">
+                                                        <div class="item">
+                                                            <img src="./image/background/04_P2091176_1.png" alt="">
+
+                                                            <div class="desc">
+
+                                                                <h3>The heritage of Laos</h3>
+
+                                                                <div class="content-desc">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur nesciunt modi quam, porro.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="#">
+                                                        <div class="item">
+                                                            <img src="./image/background/bg2.png" alt="">
+                                                            <div class="desc">
+
+                                                                <h3>The heritage Cambodia</h3>
+
+                                                                <div class="content-desc">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur nesciunt modi quam, porro.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div class="item">
+                                                            <img src="./image/background/thai-beaches-hero-.png" alt="">
 
 
-            <ul class="info-list collapse-list" id="accordion">
-                <li class="collapse__item">
-                    <div class="collapse__title" data-toggle="collapse" data-target="#c1">
-                        <span class="info__icon">
-                           <i class="fab fa-cc-visa"></i>
-                             </span>
-                        <a class="collapse__name" href="javascript:void(0)">VISA</a>
-                    </div>
-                    <div class="collapse__des info__des collapse show" id="c1" data-parent="#accordion">
-                        <div class="collapse__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa neque cum blanditiis alias quam nam, dignissimos provident molestias libero?</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nemo esse reprehenderit sequi obcaecati, neque labore nam perferendis praesentium
-                                minus, minima maxime sapiente quas asperiores autem corporis explicabo culpa eveniet.</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quos incidunt labore optio quia provident vitae nobis odit voluptate rem. optio quia provident vitae nobis odit voluptate rem.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="collapse__item">
-                    <div class="collapse__title collapsed" data-toggle="collapse" data-target="#c2">
-                        <span class="info__icon">
-                        <i class="fas fa-bus-alt"></i>
-                           </span>
-                        <a class="collapse__name" href="javascript:void(0)">Transportation</a>
-                    </div>
-                    <div class="collapse__des info__des collapse " id="c2" data-parent="#accordion">
-                        <div class="collapse__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa neque cum blanditiis alias quam nam, dignissimos provident molestias libero?</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nemo esse reprehenderit sequi obcaecati, neque labore nam perferendis praesentium
-                                minus, minima maxime sapiente quas asperiores autem corporis explicabo culpa eveniet.</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quos incidunt labore optio quia provident vitae nobis odit voluptate rem. optio quia provident vitae nobis odit voluptate rem.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="collapse__item">
-                    <div class="collapse__title collapsed" data-toggle="collapse" data-target="#c3">
-                        <span class="info__icon">
-                     <i class="far fa-calendar-check"></i>
-                        </span>
-                        <a class="collapse__name" href="javascript:void(0)">Best time to travel</a>
-                    </div>
-                    <div class="collapse__des info__des collapse " id="c3" data-parent="#accordion">
-                        <div class="collapse__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa neque cum blanditiis alias quam nam, dignissimos provident molestias libero?</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nemo esse reprehenderit sequi obcaecati, neque labore nam perferendis praesentium
-                                minus, minima maxime sapiente quas asperiores autem corporis explicabo culpa eveniet.</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quos incidunt labore optio quia provident vitae nobis odit voluptate rem. optio quia provident vitae nobis odit voluptate rem.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="collapse__item">
-                    <div class="collapse__title collapsed" data-toggle="collapse" data-target="#c4">
-                        <span class="info__icon">
-                  <i class="far fa-lightbulb"></i>
-                     </span>
-                        <a class="collapse__name" href="javascript:void(0)">Travel Tips</a>
-                    </div>
-                    <div class="collapse__des info__des collapse " id="c4" data-parent="#accordion">
-                        <div class="collapse__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa neque cum blanditiis alias quam nam, dignissimos provident molestias libero?</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nemo esse reprehenderit sequi obcaecati, neque labore nam perferendis praesentium
-                                minus, minima maxime sapiente quas asperiores autem corporis explicabo culpa eveniet.</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quos incidunt labore optio quia provident vitae nobis odit voluptate rem. optio quia provident vitae nobis odit voluptate rem.</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                                                            <div class="desc">
 
-        </div>
+                                                                <h3>The heritage Cambodia</h3>
+
+                                                                <div class="content-desc">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur nesciunt modi quam, porro.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div class="item">
+                                                            <img src="./image/background/slider-01.png" alt="">
+                                                            <div class="desc">
+                                                                <h3>VietNam Inside</h3>
+                                                                <div class="content-desc">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur nesciunt modi quam, porro.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div class="item">
+                                                            <img src="./image/background/bg-type-tour.jpg.png" alt="">
+                                                            <div class="desc">
+                                                                <h3>The heritage of Laos</h3>
+                                                                <div class="content-desc">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur nesciunt modi quam, porro.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div class="item">
+                                                            <img src="./image/background/bg-type-tour.jpg.png" alt="">
+                                                            <div class="desc">
+                                                                <h3>VietNam Inside</h3>
+                                                                <div class="content-desc">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur nesciunt modi quam, porro.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-tour view-all">
+                            <a href="#">VIEW ALL <i class="fas fa-angle-double-right    "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
         <div class="container">
             <form action="" id="recevie_new">
                 <div class="input-group">
@@ -234,8 +489,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- js local-->
-    <script src="./css/owl/js/owl.carousel.js">
-    </script>
+    <script src="./css/owl/js/owl.carousel.js"></script>
 
     <script src="./js/main.js"></script>
     <script src="./js/slider.js"></script>
