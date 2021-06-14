@@ -49,56 +49,236 @@
                     Our carefully handpicked best hotels in Vietnam ensure our clients receive excellent service in only the finest surroundings.
                 </div>
             </div>
-            <div class="filter">
-                <div class="filter-bar">
-                    <ul class="nav container">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#home">FILTERS</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Cities</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Ha Noi</a>
-                                <a class="dropdown-item" href="#">Da Nang</a>
-                                <a class="dropdown-item" href="#">TP.Ho Chi Minh</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Ranking</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">5 star</a>
-                                <a class="dropdown-item" href="#">4 star</a>
-                                <a class="dropdown-item" href="#">3 star</a>
-                                <a class="dropdown-item" href="#">2 star</a>
-                                <!-- <a class="dropdown-item" href="#">1 star</a> -->
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Sort by</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="">Reset option <i class="fas fa-sync-alt"></i></a>
-                        </li>
-                        <form action="">
-                            <div class="input-group mb-3">
+            <div class="filter__hotel">
+                <div class="filter__bar">
+                    <div class="container">
+                        <ul class="nav">
+                            <li class="nav-item filter__item">
+                                <a class="nav-link" href="javascript:void(0)">FILTERS</a>
+                            </li>
+                            <li class="nav-item dropdown filter__item">
+                                <a class="nav-link " data-toggle="dropdown" href="#">Cities <i class="ml-2 fas fa-caret-down "></i></a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Ha Noi</a>
+                                    <a class="dropdown-item" href="#">Da Nang</a>
+                                    <a class="dropdown-item" href="#">TP.Ho Chi Minh</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown filter__item">
+                                <a class="nav-link " data-toggle="dropdown" href="#">Ranking <i class="ml-2 fas fa-caret-down "></i></a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">5 star</a>
+                                    <a class="dropdown-item" href="#">4 star</a>
+                                    <a class="dropdown-item" href="#">3 star</a>
+                                    <a class="dropdown-item" href="#">2 star</a>
+                                    <!-- <a class="dropdown-item" href="#">1 star</a> -->
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown filter__item">
+                                <a class="nav-link " data-toggle="dropdown" href="#">Sort by <i class="ml-2 fas fa-caret-down "></i></a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Link 1</a>
+                                    <a class="dropdown-item" href="#">Link 2</a>
+                                    <a class="dropdown-item" href="#">Link 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item filter__item">
+                                <a class="nav-link" data-toggle="pill" href="">Reset option <i class="ml-1 far fa-sync-alt"></i></a>
+                            </li>
+
+                        </ul>
+                        <form action="" id="quick-search">
+                            <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Type Hotel Name">
                                 <div class="input-group-append">
                                     <span class="input-group-text"><i class="fas fa-search"></i></span>
                                 </div>
                             </div>
                         </form>
-                    </ul>
+                    </div>
+
                 </div>
 
                 <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane  active" id="home"></div>
+                <div class="container">
+                    <div class="tab-content filter__content">
+                        <div class="tab-pane  active" id="home">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <a href="#" class="filter__ht">
+                                        <div class="filter__img">
+                                            <img src="./image/Hotel/sofitel.png" alt="">
+                                        </div>
+                                        <div class="filter__des">
+                                            <div class="filter__ht--name">
+                                                Lorem ipsum
+                                            </div>
+                                            <div class="filter__ht--rate">
+                                                <input class="rate" type="hidden" data-filled="fas fa-star" data-empty="far fa-star" value="5" disabled="disabled" data-start="0" data-stop="5" />
+                                            </div>
+                                            <div class="filter__ht--pos">
+                                                <i class="fal fa-map-marker-alt"></i> Ha Noi
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-5 col-md-6">
+                                    <a href="#" class="filter__ht">
+                                        <div class="filter__img">
+                                            <img src="./image/Hotel/0x0.png" alt="">
+                                        </div>
+                                        <div class="filter__des">
+                                            <div class="filter__ht--name">
+                                                Lorem ipsum
+                                            </div>
+                                            <div class="filter__ht--rate">
+                                                <input class="rate" type="hidden" data-filled="fas fa-star" data-empty="far fa-star" value="5" disabled="disabled" data-start="0" data-stop="5" />
+                                            </div>
+                                            <div class="filter__ht--pos">
+                                                <i class="fal fa-map-marker-alt"></i> Ha Noi
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="#" class="filter__ht">
+                                        <div class="filter__img">
+                                            <img src="./image/Hotel/4.png" alt="">
+                                        </div>
+                                        <div class="filter__des">
+                                            <div class="filter__ht--name">
+                                                Lorem ipsum
+                                            </div>
+                                            <div class="filter__ht--rate">
+                                                <input class="rate" type="hidden" data-filled="fas fa-star" data-empty="far fa-star" value="5" disabled="disabled" data-start="0" data-stop="5" />
+                                            </div>
+                                            <div class="filter__ht--pos">
+                                                <i class="fal fa-map-marker-alt"></i> Ha Noi
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="#" class="filter__ht">
+                                        <div class="filter__img">
+                                            <img src="./image/Hotel/234173731.png" alt="">
+                                        </div>
+                                        <div class="filter__des">
+                                            <div class="filter__ht--name">
+                                                Lorem ipsum
+                                            </div>
+                                            <div class="filter__ht--rate">
+                                                <input class="rate" type="hidden" data-filled="fas fa-star" data-empty="far fa-star" value="5" disabled="disabled" data-start="0" data-stop="5" />
+                                            </div>
+                                            <div class="filter__ht--pos">
+                                                <i class="fal fa-map-marker-alt"></i> Ha Noi
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-5 col-md-6">
+                                    <a href="#" class="filter__ht">
+                                        <div class="filter__img">
+                                            <img src="./image/Hotel/3.png" alt="">
+                                        </div>
+                                        <div class="filter__des">
+                                            <div class="filter__ht--name">
+                                                Lorem ipsum
+                                            </div>
+                                            <div class="filter__ht--rate">
+                                                <input class="rate" type="hidden" data-filled="fas fa-star" data-empty="far fa-star" value="5" disabled="disabled" data-start="0" data-stop="5" />
+                                            </div>
+                                            <div class="filter__ht--pos">
+                                                <i class="fal fa-map-marker-alt"></i> Ha Noi
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <a href="#" class="filter__ht">
+                                        <div class="filter__img">
+                                            <img src="./image/Hotel/6.png" alt="">
+                                        </div>
+                                        <div class="filter__des">
+                                            <div class="filter__ht--name">
+                                                Lorem ipsum
+                                            </div>
+                                            <div class="filter__ht--rate">
+                                                <input class="rate" type="hidden" data-filled="fas fa-star" data-empty="far fa-star" value="5" disabled="disabled" data-start="0" data-stop="5" />
+                                            </div>
+                                            <div class="filter__ht--pos">
+                                                <i class="fal fa-map-marker-alt"></i> Ha Noi
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <a href="#" class="filter__ht">
+                                        <div class="filter__img">
+                                            <img src="./image/Hotel/8.png" alt="">
+                                        </div>
+                                        <div class="filter__des">
+                                            <div class="filter__ht--name">
+                                                Lorem ipsum
+                                            </div>
+                                            <div class="filter__ht--rate">
+                                                <input class="rate" type="hidden" data-filled="fas fa-star" data-empty="far fa-star" value="5" disabled="disabled" data-start="0" data-stop="5" />
+                                            </div>
+                                            <div class="filter__ht--pos">
+                                                <i class="fal fa-map-marker-alt"></i> Ha Noi
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-5 col-md-6">
+                                    <a href="#" class="filter__ht">
+                                        <div class="filter__img">
+                                            <img src="./image/Hotel/80253106.png" alt="">
+                                        </div>
+                                        <div class="filter__des">
+                                            <div class="filter__ht--name">
+                                                Lorem ipsum
+                                            </div>
+                                            <div class="filter__ht--rate">
+                                                <input class="rate" type="hidden" data-filled="fas fa-star" data-empty="far fa-star" value="5" disabled="disabled" data-start="0" data-stop="5" />
+                                            </div>
+                                            <div class="filter__ht--pos">
+                                                <i class="fal fa-map-marker-alt"></i> Ha Noi
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="#" class="filter__ht">
+                                        <div class="filter__img">
+                                            <img src="./image/Hotel/located-in-the-heart.png" alt="">
+                                        </div>
+                                        <div class="filter__des">
+                                            <div class="filter__ht--name">
+                                                Lorem ipsum
+                                            </div>
+                                            <div class="filter__ht--rate">
+                                                <input class="rate" type="hidden" data-filled="fas fa-star" data-empty="far fa-star" value="5" disabled="disabled" data-start="0" data-stop="5" />
+                                            </div>
+                                            <div class="filter__ht--pos">
+                                                <i class="fal fa-map-marker-alt"></i> Ha Noi
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <div class="container">
+                <ul class="pagination pagi-hotel justify-content-end">
+                    <li class="page-item pagi-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item pagi-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item pagi-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item pagi-item"><a class="page-link" href="#">Next <i class="far fa-angle-double-right"></i></a></li>
+                </ul>
             </div>
 
             <div class="container">
@@ -124,7 +304,13 @@
     <!-- js local-->
     <script src="./css/owl/js/owl.carousel.js"></script>
     <script src="./js/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./js/rating/rating.min.js"></script>
+
     <script src="./js/main.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/page.js"></script>
+
+    <script>
+        $("input.rate").rating();
+    </script>
 </body>
