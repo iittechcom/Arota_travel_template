@@ -14,10 +14,10 @@ img {
   margin-bottom: 30px; }
 
 .mb-20 {
-  margin-bottom: 20px; }
+  margin-bottom: 20px !important; }
 
 .pb-20 {
-  padding-bottom: 20px; }
+  padding-bottom: 20px !important; }
 
 .pb-30 {
   padding-bottom: 30px; }
@@ -606,7 +606,7 @@ img {
   .filter__item:last-child i {
     font-size: 12px; }
   .filter__item .nav-link {
-    padding: 10px 35px;
+    padding: 10px 32px;
     font-weight: 500; }
     .filter__item .nav-link:hover {
       background-color: #feb533;
@@ -724,6 +724,101 @@ img {
     border: 0;
     background-color: #fff; }
 
+/* ------ Hotel Detail ------ */
+.hotel-tab_wp {
+  font-size: 16px; }
+  .hotel-tab_wp .tab-content {
+    margin-top: -21px; }
+  .hotel-tab_wp .tab-pane {
+    background-color: #ebebeb;
+    padding: 65px 100px; }
+  .hotel-tab_wp h3 {
+    color: #feaf12;
+    font-size: 18px; }
+
+/* ---- Experiences List ---- */
+.filter__ex-item {
+  margin-bottom: 25px; }
+  .filter__ex-item:hover .filter__ex-img::before {
+    opacity: 1;
+    visibility: visible; }
+  .filter__ex-item:hover .filter__ex--text {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .filter__ex-item:hover .filter__ex--time {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .filter__ex-item:hover .filter__ex-title {
+    color: #feaf12; }
+    .filter__ex-item:hover .filter__ex-title a {
+      color: #feaf12; }
+.filter__ex-img {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+  text-shadow: 0px 0px 1px #000; }
+  .filter__ex-img:hover {
+    color: #fff; }
+  .filter__ex-img::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.267); }
+  .filter__ex-img i {
+    color: #feaf12; }
+.filter__ex--text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  padding: 0 5px; }
+.filter__ex--time {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: 3px solid #feaf12;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+.filter__ex-title {
+  color: #333;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  border-bottom: 3px solid; }
+  .filter__ex-title a {
+    display: block;
+    padding-left: 15px;
+    border-left: 8px solid #feaf12; }
+
 /* ----- responsive -------------*/
 @media (max-width: 1200px) {
   .indes__right {
@@ -742,6 +837,15 @@ img {
   .inser__title {
     padding-bottom: 15px;
     margin-bottom: 20px;
+    font-size: 16px; }
+
+  .filter__item .nav-link {
+    padding: 10px 25px; }
+
+  .filter__ex .nav-link {
+    padding: 10px 18px; }
+
+  .filter__ex-title {
     font-size: 16px; } }
 @media (min-width: 1200px) {
   .container.fix {
@@ -828,10 +932,16 @@ img {
   .nav_wp .nav > * {
     width: 100%; }
 
+  .hotel-tab_wp .nav_wp .nav > * {
+    width: 33%; }
+
   .indes__avatar .item img {
     height: 300px; }
 
   .indes__thumb .item img {
-    height: 52px; } }
+    height: 52px; }
+
+  .hotel-tab_wp .tab-pane {
+    padding: 50px 15px; } }
 
 /*# sourceMappingURL=page.css.map */

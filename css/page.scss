@@ -34,11 +34,11 @@ img {
 }
 
 .mb-20 {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 
 .pb-20 {
-    padding-bottom: 20px;
+    padding-bottom: 20px !important;
 }
 
 .pb-30 {
@@ -744,7 +744,7 @@ img {
             }
         }
         .nav-link {
-            padding: 10px 35px;
+            padding: 10px 32px;
             font-weight: 500;
             &:hover {
                 background-color: #feb533;
@@ -893,6 +893,120 @@ img {
 }
 
 
+/* ------ Hotel Detail ------ */
+
+.hotel-tab_wp {
+    font-size: 16px;
+    .tab-content {
+        margin-top: -21px;
+    }
+    .tab-pane {
+        background-color: $bg-gray;
+        padding: 65px 100px;
+    }
+    h3 {
+        color: $text-yellow;
+        font-size: 18px;
+    }
+}
+
+
+/* ---- Experiences List ---- */
+
+.filter {
+    &__ex-item {
+        margin-bottom: 25px;
+        &:hover {
+            .filter__ex-img {
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            .filter__ex--text {
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.3s ease;
+            }
+            .filter__ex--time {
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.3s ease;
+            }
+            .filter__ex-title {
+                color: $text-yellow;
+                a {
+                    color: $text-yellow;
+                }
+            }
+        }
+    }
+    &__ex-img {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        color: #fff;
+        text-shadow: 0px 0px 1px #000;
+        &:hover {
+            color: #fff;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            visibility: hidden;
+            opacity: 0;
+            background: rgba(0, 0, 0, 0.267);
+        }
+        i {
+            color: $text-yellow;
+        }
+    }
+    &__ex--text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        font-size: 14px;
+        padding: 0 5px;
+    }
+    &__ex--time {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        border-bottom: 3px solid $text-yellow;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+    &__ex-title {
+        color: #333;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        border-bottom: 3px solid;
+        a {
+            display: block;
+            padding-left: 15px;
+            border-left: 8px solid $text-yellow;
+        }
+    }
+}
+
+
 /* ----- responsive -------------*/
 
 @media (max-width: 1200px) {
@@ -912,6 +1026,15 @@ img {
     .inser__title {
         padding-bottom: 15px;
         margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .filter__item .nav-link {
+        padding: 10px 25px;
+    }
+    .filter__ex .nav-link {
+        padding: 10px 18px;
+    }
+    .filter__ex-title {
         font-size: 16px;
     }
 }
@@ -1004,10 +1127,16 @@ img {
     .nav_wp .nav>* {
         width: 100%;
     }
+    .hotel-tab_wp .nav_wp .nav>* {
+        width: 33%;
+    }
     .indes__avatar .item img {
         height: 300px;
     }
     .indes__thumb .item img {
         height: 52px;
+    }
+    .hotel-tab_wp .tab-pane {
+        padding: 50px 15px;
     }
 }
