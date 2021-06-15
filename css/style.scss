@@ -218,7 +218,7 @@ img {
                 }
             }
             .dropdown-menu {
-                width: 100%;
+                min-width: 100%;
                 border: none;
                 transition: all .5s ease-in-out;
                 margin-top: -10px;
@@ -239,9 +239,9 @@ img {
     }
     .navbar {
         transition: all .5s ease-in-out;
-        .dropdown {
-            position: static;
-        }
+        // .dropdown {
+        //     position: static;
+        // }
         .img-dropdownmenu,
         .height100 {
             height: 100px;
@@ -272,7 +272,6 @@ img {
     .dropdown:hover .dropdown-menu {
         display: block;
         transition: all .5s ease-in-out;
-        background: transparent;
         .container {
             background: transparent;
             .col-md-2,
@@ -304,7 +303,7 @@ img {
         }
     }
     .dropdown-menu .container_menu {
-        width: 40%;
+        min-width: 30vw;
         margin: auto;
         transition: all .5s ease;
         background: $bg-light;
@@ -336,7 +335,7 @@ img {
     }
     .dropdown-menu.drop_experiences {
         .container_menu {
-            width: 50%;
+            min-width: 45vw;
             transition: all .5s ease;
             .row_menu {
                 .item {
@@ -346,6 +345,41 @@ img {
                         text-transform: capitalize;
                     }
                 }
+            }
+        }
+    }
+    .dropdown-menu.drop-aboutus {
+        min-width: 15rem!important;
+        padding: 20px 15px;
+        background: $bg-light;
+        .item {
+            transition: all .5s ease-in;
+            position: relative;
+            padding: 10px 0px;
+            .img-dropdownmenu {
+                display: none;
+                transition: all .5s ease-in;
+            }
+            a {
+                text-transform: initial;
+                color: $text-dark;
+            }
+        }
+        .item.active {
+            position: relative;
+            transition: all .5s ease-in;
+            .img-dropdownmenu {
+                display: block;
+                height: 60px;
+            }
+            .tt-menu {
+                position: absolute;
+                // width: 100%;
+                // height: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -10px);
+                color: $text-light;
             }
         }
     }

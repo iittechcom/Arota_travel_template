@@ -31,3 +31,7 @@ function scroll_header() {
 }
 
 window.onscroll = function() { scroll_header() }
+    // hover menu about us
+$(".drop-aboutus .item").hover(function() {
+    $(this).toggleClass("active")
+})

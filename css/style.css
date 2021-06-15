@@ -153,7 +153,7 @@ img {
     .menu .navbar-expand-md .navbar-nav .flex-column.padding0 .nav-item a {
       padding: 5px; }
     .menu .navbar-expand-md .navbar-nav .dropdown-menu {
-      width: 100%;
+      min-width: 100%;
       border: none;
       transition: all .5s ease-in-out;
       margin-top: -10px;
@@ -168,8 +168,6 @@ img {
           padding: 0 !important; }
   .menu .navbar {
     transition: all .5s ease-in-out; }
-    .menu .navbar .dropdown {
-      position: static; }
     .menu .navbar .img-dropdownmenu,
     .menu .navbar .height100 {
       height: 100px;
@@ -192,8 +190,7 @@ img {
       padding: 0; }
   .menu .dropdown:hover .dropdown-menu {
     display: block;
-    transition: all .5s ease-in-out;
-    background: transparent; }
+    transition: all .5s ease-in-out; }
     .menu .dropdown:hover .dropdown-menu .container {
       background: transparent; }
       .menu .dropdown:hover .dropdown-menu .container .col-md-2,
@@ -217,7 +214,7 @@ img {
         overflow: hidden;
         transition: all .5s ease-in-out; }
   .menu .dropdown-menu .container_menu {
-    width: 40%;
+    min-width: 30vw;
     margin: auto;
     transition: all .5s ease;
     background: #fff; }
@@ -242,13 +239,39 @@ img {
             z-index: 9;
             color: #fff; }
   .menu .dropdown-menu.drop_experiences .container_menu {
-    width: 50%;
+    min-width: 45vw;
     transition: all .5s ease; }
     .menu .dropdown-menu.drop_experiences .container_menu .row_menu .item {
       width: 25%;
       padding: 5px; }
       .menu .dropdown-menu.drop_experiences .container_menu .row_menu .item a {
         text-transform: capitalize; }
+  .menu .dropdown-menu.drop-aboutus {
+    min-width: 15rem !important;
+    padding: 20px 15px;
+    background: #fff; }
+    .menu .dropdown-menu.drop-aboutus .item {
+      transition: all .5s ease-in;
+      position: relative;
+      padding: 10px 0px; }
+      .menu .dropdown-menu.drop-aboutus .item .img-dropdownmenu {
+        display: none;
+        transition: all .5s ease-in; }
+      .menu .dropdown-menu.drop-aboutus .item a {
+        text-transform: initial;
+        color: #000; }
+    .menu .dropdown-menu.drop-aboutus .item.active {
+      position: relative;
+      transition: all .5s ease-in; }
+      .menu .dropdown-menu.drop-aboutus .item.active .img-dropdownmenu {
+        display: block;
+        height: 60px; }
+      .menu .dropdown-menu.drop-aboutus .item.active .tt-menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -10px);
+        color: #fff; }
   .menu .dropdown-toggle::after {
     display: inline-block;
     margin-left: .255em;
