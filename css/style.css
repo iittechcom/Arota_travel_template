@@ -116,6 +116,13 @@ img {
 .menu {
   background-color: transparent;
   border-bottom: 1px solid #FFFf; }
+  .menu.fixed {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 10; }
+    .menu.fixed .navbar {
+      padding: 3px 1rem; }
   .menu .navbar-expand-md .navbar-collapse {
     font-weight: 600;
     justify-content: space-around; }
@@ -232,7 +239,7 @@ img {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: 11;
+            z-index: 9;
             color: #fff; }
   .menu .dropdown-menu.drop_experiences .container_menu {
     width: 50%;
@@ -296,7 +303,7 @@ img {
     .banner .search_banner .content-search_banner {
       padding: 5px 15px;
       background: #FFF;
-      z-index: 11;
+      z-index: 9;
       position: absolute;
       border-radius: 10px;
       width: 60%;
@@ -332,7 +339,8 @@ img {
   background-size: 100%;
   background-position-x: 100%;
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  z-index: 0; }
   .destination::before {
     content: "";
     position: absolute;
@@ -372,7 +380,7 @@ img {
     position: relative; }
     .destination .item .desc {
       position: absolute;
-      z-index: 11;
+      z-index: 9;
       top: 50%;
       left: -20%;
       color: #FFF;
@@ -623,38 +631,172 @@ img {
     .experience .owl-prev i {
       color: rgba(0, 0, 0, 0.87); }
 
-.article_index .item {
-  position: relative; }
-  .article_index .item::before {
+.article_index {
+  background: url(../image/background/cambodia_travel_guide_.png);
+  height: 130vh;
+  background-attachment: scroll;
+  position: relative;
+  background-position: center center; }
+  .article_index::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0), black); }
-  .article_index .item img {
-    height: 200px; }
-.article_index .desc {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 0%;
-  padding: 20px;
-  z-index: 11;
-  color: #fff; }
-  .article_index .desc a {
-    transition: all .5s ease-in;
+    background: rgba(0, 0, 0, 0.87); }
+  .article_index::after {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #FFF;
+    line-height: 1.5;
+    font-size: 1rem;
+    position: absolute;
+    z-index: 9; }
+  .article_index .bg-article_index {
+    background: url(../image/background/bg-why_us.png);
+    background-position: center 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0; }
+    .article_index .bg-article_index::before {
+      position: absolute;
+      z-index: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.41); }
+  .article_index .item {
+    position: relative; }
+    .article_index .item::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(rgba(255, 255, 255, 0), black); }
+    .article_index .item img {
+      height: 200px; }
+  .article_index .desc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 0%;
+    padding: 20px;
+    z-index: 9;
     color: #fff; }
-    .article_index .desc a h3 {
-      font-size: 1.05rem; }
-    .article_index .desc a:hover {
-      text-decoration: none;
-      color: #FEB012; }
+    .article_index .desc a {
+      transition: all .5s ease-in;
+      color: #fff; }
+      .article_index .desc a h3 {
+        font-size: 1.05rem; }
+      .article_index .desc a:hover {
+        text-decoration: none;
+        color: #FEB012; }
+
+#recevie_new {
+  padding: 12px 100px;
+  background: rgba(0, 0, 0, 0.87); }
+  #recevie_new label {
+    color: #FEB012;
+    margin-bottom: 0;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 600; }
+  #recevie_new .form-control {
+    height: 30px;
+    border: 1px solid #FEB012;
+    background-color: transparent;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  #recevie_new .input-group-text {
+    background-color: transparent;
+    color: #FEB012;
+    border: 1px solid #FEB012; }
 
 footer {
-  background: url(../image/background/cambodia_travel_guide_.png);
-  background-size: 100%; }
+  color: #FFF;
+  line-height: 1.5;
+  font-size: 1rem;
+  position: relative;
+  z-index: 9; }
   footer .top-footer .row {
     width: 100%; }
+  footer a {
+    color: #fff; }
+  footer .logo {
+    padding-right: 15%;
+    margin-bottom: 15px; }
+  footer .infor {
+    clear: both;
+    padding: 20px 0px; }
+  footer .socical-network {
+    margin-top: 30px; }
+    footer .socical-network a i {
+      border: 1px solid #FFF;
+      width: 40px !important;
+      height: 40px !important;
+      margin-right: 15px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center; }
+    footer .socical-network h4 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #FEB012;
+      padding: 15px 0px 20px;
+      margin: 0; }
+  footer .menu-footer h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FEB012;
+    padding: 15px 0px 20px;
+    margin: 0; }
+  footer .menu-footer ul {
+    list-style-type: none; }
+    footer .menu-footer ul li {
+      padding: 5px 0px; }
+
+.footer {
+  padding-top: 50px;
+  position: relative; }
+  .footer::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.87);
+    z-index: 0;
+    height: 100%; }
+  .footer .coppy-right {
+    background: #000; }
+    .footer .coppy-right .content {
+      display: flex;
+      justify-content: space-between; }
+      .footer .coppy-right .content .cpyright {
+        padding: 10px 0px; }
+      .footer .coppy-right .content .link-cpy {
+        padding: 10px 5px; }
+        .footer .coppy-right .content .link-cpy a {
+          color: #FEB012;
+          padding-left: 1rem;
+          position: relative; }
+          .footer .coppy-right .content .link-cpy a::before {
+            content: "";
+            position: absolute;
+            right: -.5rem;
+            top: .4rem;
+            width: 1px;
+            height: .75rem;
+            background: #FEB012; }
+          .footer .coppy-right .content .link-cpy a:nth-last-child(1)::before {
+            background: transparent; }

@@ -17,3 +17,17 @@ $(document).ready(function() {
     });
 
 });
+
+//scroll menu
+let scroll__menu = document.querySelector(".menu");
+let height__scroll = 145;
+
+function scroll_header() {
+    if (window.pageYOffset > height__scroll) {
+        scroll__menu.classList.add("fixed");
+    } else {
+        scroll__menu.classList.remove("fixed");
+    }
+}
+
+window.onscroll = function() { scroll_header() }
