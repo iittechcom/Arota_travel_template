@@ -108,6 +108,49 @@ img {
     }
 }
 
+.sroll-left {
+    // position: fixed;
+    // z-index: 11;
+    // bottom: 25vh;
+    // right: 0%;
+    li {
+        list-style-type: none;
+        position: fixed;
+        right: 0%;
+        z-index: 11;
+        background-color: #333;
+        margin-top: 5px;
+        height: 50px;
+        transform: translate(0, -50%);
+        width: 50px;
+        transition: all .5s ease-in;
+        overflow: hidden;
+        &:nth-child(1) {
+            bottom: 38vh;
+        }
+        &:nth-child(2) {
+            bottom: 30vh;
+        }
+        &:nth-child(3) {
+            bottom: 22vh;
+        }
+        img {
+            width: 50px;
+            padding: 10px 10px 10px 15px;
+            height: 50px;
+            object-fit: contain;
+        }
+        &:hover {
+            width: 150px
+        }
+        a {
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #FFF;
+        }
+    }
+}
+
 .typetour_owl,
 .owl-custom-talking {
     z-index: unset;

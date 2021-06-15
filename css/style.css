@@ -67,6 +67,36 @@ img {
     #scroll a i.fa-minus {
       padding-left: 1px; }
 
+.sroll-left li {
+  list-style-type: none;
+  position: fixed;
+  right: 0%;
+  z-index: 11;
+  background-color: #333;
+  margin-top: 5px;
+  height: 50px;
+  transform: translate(0, -50%);
+  width: 50px;
+  transition: all .5s ease-in;
+  overflow: hidden; }
+  .sroll-left li:nth-child(1) {
+    bottom: 38vh; }
+  .sroll-left li:nth-child(2) {
+    bottom: 30vh; }
+  .sroll-left li:nth-child(3) {
+    bottom: 22vh; }
+  .sroll-left li img {
+    width: 50px;
+    padding: 10px 10px 10px 15px;
+    height: 50px;
+    object-fit: contain; }
+  .sroll-left li:hover {
+    width: 150px; }
+  .sroll-left li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #FFF; }
+
 .typetour_owl,
 .owl-custom-talking {
   z-index: unset; }
