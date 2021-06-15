@@ -35,25 +35,46 @@ body {
             background: $bg-yellow;
             font-weight: 600;
         }
+        .hotel-tab_wp
+        {
+            .nav
+            {
+                justify-content: space-evenly;
+            }
+         
+        }
     }
     .form-group {
         label {
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             font-weight: 600;
             color: $text-light;
         }
     }
     input {
+       border: 1px solid #FFF;
+       color: $text-light;
+       z-index: 11;
         background: transparent;
         &:-webkit-input-placeholder,
         &:-ms-input-placeholder,
         &::placeholder {
-            color: $text-yellow;
+            color: $text-light;
+        }
+        &:active, &:focus
+        {
+            background: transparent;
+            box-shadow: none;
+           border: 1px solid #FFF;
         }
     }
 }
-
+:-webkit-input-placeholder,
+:-ms-input-placeholder,
+:placeholder {
+    color: $text-light;
+}
 footer {
     margin-top: -55px;
 }

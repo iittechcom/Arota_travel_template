@@ -24,15 +24,29 @@ body {
       text-transform: uppercase;
       background: #FEB012;
       font-weight: 600; }
+    .login .content .hotel-tab_wp .nav {
+      justify-content: space-evenly; }
   .login .form-group label {
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     font-weight: 600;
     color: #fff; }
   .login input {
+    border: 1px solid #FFF;
+    color: #fff;
+    z-index: 11;
     background: transparent; }
     .login input:-webkit-input-placeholder, .login input:-ms-input-placeholder, .login input::placeholder {
-      color: #FEB012; }
+      color: #fff; }
+    .login input:active, .login input:focus {
+      background: transparent;
+      box-shadow: none;
+      border: 1px solid #FFF; }
+
+:-webkit-input-placeholder,
+:-ms-input-placeholder,
+:placeholder {
+  color: #fff; }
 
 footer {
   margin-top: -55px; }
