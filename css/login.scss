@@ -12,15 +12,22 @@ body {
 }
 
 .login {
-    height: 150vh;
+    min-height: 100vh;
     background-image: url("../image/background/bg-type-tour.jpg.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+   padding-top: 10vh;
     width: 100%;
+    .logo
+    {
+        padding-bottom: 50px;
+        img{
+            width: 100%;
+        }
+    }
     .content {
         margin: auto;
         background: $bg-before;
@@ -35,13 +42,35 @@ body {
             background: $bg-yellow;
             font-weight: 600;
         }
-        .hotel-tab_wp
-        {
-            .nav
+        .hotel-tab_wp {
+            padding: 30px;
+            .nav-link
             {
-                justify-content: space-evenly;
+                padding: 0;
+                margin-right: 30px;
+                background: transparent;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $text-light;
+                &.active{
+                   position: relative;
+                   &::before{
+                       position: absolute;
+                       z-index: 1;
+                       content: "";
+                       width: 60px;
+                       height: 2px;
+                       background: $bg-yellow;
+                       bottom: -3px;
+                       left: 50%;
+                       transform: translate(-50%, 1px);
+                   }
+                }
             }
-         
+        }
+        .tab-pane{
+            padding: 0;
         }
     }
     .form-group {
@@ -59,7 +88,7 @@ body {
         background: transparent;
         &:-webkit-input-placeholder,
         &:-ms-input-placeholder,
-        &::placeholder {
+        &:placeholder {
             color: $text-light;
         }
         &:active, &:focus
@@ -69,12 +98,167 @@ body {
            border: 1px solid #FFF;
         }
     }
+    .btn-sig
+    {
+        width: 100%;
+        background-color: $bg-yellow;
+        border: 1px solid $bg-yellow;
+        height: 40px;
+        text-transform: uppercase;
+        color: $text-light;
+        font-weight: 600;
+        margin-top: 30px    ;
+        &:active, &:focus, &:focus-within, &:focus-visible
+        {
+           
+        box-shadow: none;
+           border: 1px solid $bg-yellow;
+        }
+    } 
+    .fg-pw
+    {
+        
+        color: $text-light;
+       text-align: center;
+    }  
 }
 :-webkit-input-placeholder,
-:-ms-input-placeholder,
-:placeholder {
-    color: $text-light;
+    :-ms-input-placeholder,
+    :placeholder {
+        color: $text-light;
 }
-footer {
-    margin-top: -55px;
+// login download
+.login-download {
+    min-height: 100vh;
+    background-image: url("../image/background/bg-type-tour.jpg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    padding-top: 10vh;
+    width: 100%;
+    position: relative;
+    &:before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: $bg-before;
+        z-index: 0;
+    }
+    .logo
+    {
+        padding-bottom: 50px;
+        img{
+            width: 100%;
+        }
+    }
+    .container{
+        position: relative;
+        z-index: 1;
+    }
+    .section-title
+    {
+        text-align: center;
+        color: $text-yellow;
+       
+     h4{
+         color: $text-yellow;
+         padding-bottom: 20px;
+         position: relative;
+         &:before
+         {
+            position: absolute;
+            content: "";
+            width: 35vw;
+            height: 1px;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0px);
+            background: $bg-yellow;
+            z-index: 0;
+
+         }
+     }
+
+    }
+    .item {
+        position: relative;
+        margin-top: 30px;
+        .img{
+            position: relative;
+            &::before{
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: $bg-before;
+                z-index: 0;
+                opacity: 0;
+                border-bottom: 2px solid $bg-yellow;
+                transition: all .5s ease;
+            }
+        }
+        .content{
+            color: $text-light;
+            h4{
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                padding: 15px 0px 15px 30px;
+                border-bottom: 2px solid $bg-light;
+                position: relative;
+                &::before{
+                  
+                    position: absolute;
+                    content: "";
+                    width: 10px;
+                    height: 25px;
+                    background: $bg-yellow;
+                    z-index: 1;
+                    left: 0;
+                    top: 50%;
+                    transform: translate(0, -45%);
+                }
+            }
+        } 
+        &:hover> .img:before
+        {
+            opacity: 1;
+            transition: all .5s ease;
+
+        }
+        &:hover> .down-load
+        {
+            display: block;
+        }
+        &:hover> .content h4{
+            border-bottom: 2px solid $bg-yellow;
+        }
+      }
+      .down-load
+      {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: none;
+          transition: all .5s ease;
+          a{
+              padding: 10px 15px;
+              color: $text-yellow;
+              text-transform: uppercase;
+              font-weight: 600;
+              border: 1px solid $bg-yellow;
+              background: $bg-before;
+              &:hover
+              {
+                  color: $text-light;
+                  text-decoration: none;
+              }
+          }
+      }
+
+    
+   
 }

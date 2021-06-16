@@ -2,15 +2,19 @@ body {
   position: relative; }
 
 .login {
-  height: 150vh;
+  min-height: 100vh;
   background-image: url("../image/background/bg-type-tour.jpg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-top: 10vh;
   width: 100%; }
+  .login .logo {
+    padding-bottom: 50px; }
+    .login .logo img {
+      width: 100%; }
   .login .content {
     margin: auto;
     background: rgba(0, 0, 0, 0.87);
@@ -24,8 +28,30 @@ body {
       text-transform: uppercase;
       background: #FEB012;
       font-weight: 600; }
-    .login .content .hotel-tab_wp .nav {
-      justify-content: space-evenly; }
+    .login .content .hotel-tab_wp {
+      padding: 30px; }
+      .login .content .hotel-tab_wp .nav-link {
+        padding: 0;
+        margin-right: 30px;
+        background: transparent;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff; }
+        .login .content .hotel-tab_wp .nav-link.active {
+          position: relative; }
+          .login .content .hotel-tab_wp .nav-link.active::before {
+            position: absolute;
+            z-index: 1;
+            content: "";
+            width: 60px;
+            height: 2px;
+            background: #FEB012;
+            bottom: -3px;
+            left: 50%;
+            transform: translate(-50%, 1px); }
+    .login .content .tab-pane {
+      padding: 0; }
   .login .form-group label {
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -36,17 +62,129 @@ body {
     color: #fff;
     z-index: 11;
     background: transparent; }
-    .login input:-webkit-input-placeholder, .login input:-ms-input-placeholder, .login input::placeholder {
+    .login input:-webkit-input-placeholder, .login input:-ms-input-placeholder, .login input:placeholder {
       color: #fff; }
     .login input:active, .login input:focus {
       background: transparent;
       box-shadow: none;
       border: 1px solid #FFF; }
+  .login .btn-sig {
+    width: 100%;
+    background-color: #FEB012;
+    border: 1px solid #FEB012;
+    height: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 30px; }
+    .login .btn-sig:active, .login .btn-sig:focus, .login .btn-sig:focus-within, .login .btn-sig:focus-visible {
+      box-shadow: none;
+      border: 1px solid #FEB012; }
+  .login .fg-pw {
+    color: #fff;
+    text-align: center; }
 
 :-webkit-input-placeholder,
 :-ms-input-placeholder,
 :placeholder {
   color: #fff; }
 
-footer {
-  margin-top: -55px; }
+.login-download {
+  min-height: 100vh;
+  background-image: url("../image/background/bg-type-tour.jpg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  padding-top: 10vh;
+  width: 100%;
+  position: relative; }
+  .login-download:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.87);
+    z-index: 0; }
+  .login-download .logo {
+    padding-bottom: 50px; }
+    .login-download .logo img {
+      width: 100%; }
+  .login-download .container {
+    position: relative;
+    z-index: 1; }
+  .login-download .section-title {
+    text-align: center;
+    color: #FEB012; }
+    .login-download .section-title h4 {
+      color: #FEB012;
+      padding-bottom: 20px;
+      position: relative; }
+      .login-download .section-title h4:before {
+        position: absolute;
+        content: "";
+        width: 35vw;
+        height: 1px;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        background: #FEB012;
+        z-index: 0; }
+  .login-download .item {
+    position: relative;
+    margin-top: 30px; }
+    .login-download .item .img {
+      position: relative; }
+      .login-download .item .img::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.87);
+        z-index: 0;
+        opacity: 0;
+        border-bottom: 2px solid #FEB012;
+        transition: all .5s ease; }
+    .login-download .item .content {
+      color: #fff; }
+      .login-download .item .content h4 {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        padding: 15px 0px 15px 30px;
+        border-bottom: 2px solid #fff;
+        position: relative; }
+        .login-download .item .content h4::before {
+          position: absolute;
+          content: "";
+          width: 10px;
+          height: 25px;
+          background: #FEB012;
+          z-index: 1;
+          left: 0;
+          top: 50%;
+          transform: translate(0, -45%); }
+    .login-download .item:hover > .img:before {
+      opacity: 1;
+      transition: all .5s ease; }
+    .login-download .item:hover > .down-load {
+      display: block; }
+    .login-download .item:hover > .content h4 {
+      border-bottom: 2px solid #FEB012; }
+  .login-download .down-load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: all .5s ease; }
+    .login-download .down-load a {
+      padding: 10px 15px;
+      color: #FEB012;
+      text-transform: uppercase;
+      font-weight: 600;
+      border: 1px solid #FEB012;
+      background: rgba(0, 0, 0, 0.87); }
+      .login-download .down-load a:hover {
+        color: #fff;
+        text-decoration: none; }
