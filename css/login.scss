@@ -1,0 +1,59 @@
+$bg-light: #fff;
+$bg-dark: #000;
+$bg-yellow: #FEB012;
+$bg-before: rgba(0, 0, 0, 0.87);
+$bg-yellow_before: #e9a41986;
+$bg-light_before: #ffffff86;
+$text-yellow: #FEB012;
+$text-dark: #000;
+$text-light: #fff;
+body {
+    position: relative;
+}
+
+.login {
+    height: 150vh;
+    background-image: url("../image/background/bg-type-tour.jpg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .content {
+        margin: auto;
+        background: $bg-before;
+        width: 30vw;
+        padding-bottom: 30px;
+        h3 {
+            font-size: 1.2rem;
+            color: $text-dark;
+            padding: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            background: $bg-yellow;
+            font-weight: 600;
+        }
+    }
+    .form-group {
+        label {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            color: $text-light;
+        }
+    }
+    input {
+        background: transparent;
+        &:-webkit-input-placeholder,
+        &:-ms-input-placeholder,
+        &::placeholder {
+            color: $text-yellow;
+        }
+    }
+}
+
+footer {
+    margin-top: -55px;
+}
