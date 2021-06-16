@@ -22,6 +22,9 @@ img {
 .pb-30 {
   padding-bottom: 30px; }
 
+.text-yellow {
+  color: #feaf12; }
+
 /* style */
 .banner__page img {
   height: 436px;
@@ -402,15 +405,18 @@ img {
     z-index: 20;
     background-color: #fff; }
     .nav_wp .nav > * {
-      width: 180px;
+      min-width: 180px;
       text-align: center; }
   .nav_wp .nav-link {
     padding: 6px 25px;
     font-size: 15px;
-    font-weight: bold; }
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid transparent; }
     .nav_wp .nav-link.active, .nav_wp .nav-link:hover {
       background-color: #feaf12;
-      color: #fff; }
+      color: #fff;
+      border: 1px solid #feaf12; }
 
 .tour-tab_wp .experience {
   padding-bottom: 20px; }
@@ -506,7 +512,7 @@ img {
 .indes__left {
   width: 54%;
   position: relative; }
-.indes__avatar .item img {
+.indes__avatar img {
   height: 380px; }
 .indes__thumb-wp {
   width: 70%;
@@ -575,13 +581,6 @@ img {
   font-weight: 700; }
 
 /* ---- Hotel ----- */
-.hotel__title {
-  font-weight: 700;
-  margin-bottom: 20px; }
-.hotel__des {
-  margin-bottom: 25px;
-  font-size: 14px; }
-
 .filter__bar {
   background-color: #ebebeb;
   font-size: 16px; }
@@ -819,7 +818,139 @@ img {
     padding-left: 15px;
     border-left: 8px solid #feaf12; }
 
+/* ----- Experiences cover ------ */
+.exp-grid {
+  display: grid;
+  grid-template-rows: 380px 25px 220px 220px 110px 485px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px 30px; }
+.exp_cover--link {
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  font-size: 15px; }
+  .exp_cover--link:hover::before {
+    background: rgba(0, 0, 0, 0.301); }
+  .exp_cover--link:hover .exp__title {
+    color: #feaf12; }
+  .exp_cover--link:hover .exp__des {
+    bottom: 50%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .exp_cover--link:hover .exp__text {
+    display: block; }
+  .exp_cover--link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1); }
+.exp__img {
+  height: 100%; }
+  .exp__img img {
+    display: block;
+    height: 100%; }
+.exp-1 {
+  grid-column: 1/2;
+  grid-row: 1/2; }
+.exp-2 {
+  grid-column: 2/3;
+  grid-row: 1/3; }
+.exp-3 {
+  grid-column: 3/4;
+  grid-row: 1/4; }
+.exp-4 {
+  grid-column: 1/2;
+  grid-row: 2/6; }
+.exp-5 {
+  grid-column: 2/3;
+  grid-row: 3/5; }
+.exp-6 {
+  grid-column: 1/2;
+  grid-row: 6/7; }
+.exp-7 {
+  grid-column: 2/3;
+  grid-row: 5/7; }
+.exp-8 {
+  grid-column: 3/4;
+  grid-row: 4/7; }
+.exp__des {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000; }
+.exp__title {
+  font-weight: bold;
+  text-transform: uppercase; }
+.exp__text {
+  display: none; }
+
+/* ------ Experiences Detail ------ */
+.exp_detail {
+  margin: 0 60px; }
+.exp_slide {
+  position: relative;
+  margin-bottom: 30px; }
+.exp__avatar img {
+  height: 420px; }
+.exp__thumb-wp {
+  width: 40%;
+  bottom: 15px;
+  left: 15px; }
+.exp__info {
+  font-size: 16px;
+  margin-bottom: 30px; }
+  .exp__info i {
+    color: #feaf12; }
+.exp-tab {
+  margin-bottom: 30px; }
+.exp-pane {
+  padding: 40px 100px 30px; }
+.exp-nav_item:last-child .nav-link {
+  border: 1px solid #f26c4f;
+  color: #f26c4f; }
+  .exp-nav_item:last-child .nav-link.active {
+    color: #fff;
+    background-color: #f26c4f; }
+.exp-nav_item:last-child:hover .nav-link {
+  color: #fff;
+  background-color: #f26c4f; }
+.exp-content .collapse__title {
+  padding: 8px 10px 8px 20px;
+  background-color: #ebebeb; }
+.exp-content .collapse__item {
+  padding: 3px 0;
+  border-bottom: 0; }
+.exp-content .collapse__name {
+  margin-left: 0; }
+.exp-detail__icon {
+  width: 26px;
+  height: 26px;
+  margin-left: auto;
+  font-size: 13px;
+  border-radius: 100%; }
+
+.ed-content {
+  background-color: #ebebeb;
+  margin-top: -22px; }
+
 /* ----- responsive -------------*/
+@media (min-width: 1200px) {
+  .container.fix {
+    max-width: 960px; } }
 @media (max-width: 1200px) {
   .indes__right {
     padding: 25px 20px; }
@@ -846,10 +977,13 @@ img {
     padding: 10px 18px; }
 
   .filter__ex-title {
-    font-size: 16px; } }
-@media (min-width: 1200px) {
-  .container.fix {
-    max-width: 960px; } }
+    font-size: 16px; }
+
+  .exp-grid {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
+
+  .exp__title {
+    font-size: 20px; } }
 @media (max-width: 1023px) {
   .nation__info {
     width: 310px; }
@@ -890,6 +1024,12 @@ img {
 
   #quick-search {
     margin: 10px 0 0px auto; } }
+@media (max-width: 1023px) {
+  .exp-grid {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); }
+
+  .exp_detail {
+    margin: 0; } }
 @media (max-width: 767px) {
   .box {
     margin-top: 20px; }
@@ -914,7 +1054,18 @@ img {
     padding: 10px; }
 
   .collapse__des {
-    margin-left: 20px; } }
+    margin-left: 20px; }
+
+  .exp-grid {
+    grid-column: auto;
+    grid-template-rows: auto; }
+
+  .exp__item {
+    grid-column: 1/2;
+    grid-row: auto; } }
+@media (max-width: 767px) {
+  .exp__thumb-wp {
+    width: 70%; } }
 @media (max-width: 600px) {
   .owl-item.center .tour__item {
     width: 100%; }
@@ -930,10 +1081,11 @@ img {
     padding: 0 20px; }
 
   .nav_wp .nav > * {
+    min-width: auto;
     width: 100%; }
-
-  .hotel-tab_wp .nav_wp .nav > * {
-    width: 33%; }
+    .nav_wp .nav > * .nav-link {
+      border: 1px solid #feaf12;
+      margin: 3px 0; }
 
   .indes__avatar .item img {
     height: 300px; }
