@@ -4,6 +4,7 @@ $bg-dark: #000;
 $bg-yellow: #feaf12;
 $bg-gray: #ebebeb;
 $bg-pink: #f26c4f;
+$bg-footer: #7f7f7f;
 //
 $text-yellow: #feaf12;
 $yellow-icon: #f7941d;
@@ -50,6 +51,11 @@ img {
     color: $text-yellow;
 }
 
+.bg-yellow {
+    background-color: $bg-yellow;
+    color: #fff;
+}
+
 // @media(min-width: 1200px) {
 //     .container {
 //         max-width: 960px;
@@ -57,6 +63,37 @@ img {
 // }
 
 /* style */
+
+
+/* ---- Header-page ----*/
+
+.header-page {
+    z-index: 10000;
+    .fixed {
+        background-color: $yellow-icon;
+    }
+}
+
+
+/* ---- Footer page ---- */
+
+.footer-page {
+    &::before {
+        background-color: $bg-footer;
+    }
+    .coppy-right {
+        background: #000;
+        position: relative;
+        margin-top: 20px;
+    }
+}
+
+.footer-info {
+    width: 75%;
+}
+
+
+/* ----- banner page---- */
 
 .banner {
     &__page {
@@ -521,7 +558,7 @@ img {
             right: 0;
             bottom: 0;
             background: rgba(0, 0, 0, 0.233);
-            z-index: 1;
+            z-index: 0;
         }
         &:hover {
             color: $text-yellow;
@@ -542,6 +579,7 @@ img {
         font-size: 16px;
         text-transform: uppercase;
         text-shadow: 0px 0px 2px #333;
+        z-index: 0;
     }
 }
 
@@ -1140,16 +1178,34 @@ img {
     }
     &__info {
         font-size: 16px;
-        margin-bottom: 30px;
+        margin-bottom: 35px;
         i {
+            color: $text-yellow;
+        }
+        h4 {
             color: $text-yellow;
         }
     }
     &-tab {
         margin-bottom: 30px;
+        font-size: 16px;
     }
     &-pane {
         padding: 40px 100px 30px;
+        &:last-child {
+            padding: 40px 0 30px;
+        }
+        form {
+            padding: 20px 100px;
+        }
+    }
+    &-pane_title {
+        padding: 3px 100px;
+        background-color: $bg-dark;
+        color: $text-yellow;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 0;
     }
     &-nav_item {
         &:last-child {
@@ -1194,6 +1250,100 @@ img {
 .ed-content {
     background-color: $bg-gray;
     margin-top: -22px;
+}
+
+#travel_info {
+    label {
+        font-weight: bold;
+    }
+}
+
+#tour_info {
+    [class*="col-"] {
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 0px;
+    }
+}
+
+.group-child {
+    width: 60%;
+    display: flex;
+    input {
+        width: 30%;
+        margin-right: 10px;
+    }
+}
+
+.group-fix {
+    display: flex;
+    align-items: center;
+    label {
+        margin-right: 5px;
+    }
+}
+
+.btn-submit {
+    font-weight: bold;
+}
+
+.calander {
+    position: relative;
+    background-color: #fff;
+    input {
+        position: relative;
+        z-index: 10;
+        background-color: transparent;
+    }
+    &-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #e6c108;
+        color: #fff;
+        border-radius: .25rem;
+        font-size: 20px;
+        z-index: 1;
+    }
+}
+
+
+/* ---- About meet ---- */
+
+.about-box {
+    font-size: 16px;
+    .box__content {
+        width: 80%;
+        margin: 0 auto;
+    }
+    [class*="col-"] {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.about {
+    &_m-item {
+        margin-bottom: 35px;
+    }
+    &_m-img {
+        img {
+            height: 260px;
+        }
+    }
+    &_m-des {
+        padding: 15px 10px 10px;
+        border: 1px solid #cccccc;
+    }
+    &-gallery {
+        margin-bottom: 35px;
+    }
 }
 
 
@@ -1284,6 +1434,24 @@ img {
     }
     .exp_detail {
         margin: 0;
+    }
+    .exp-pane form {
+        padding: 20px 20px;
+    }
+    .group-child {
+        width: 100%;
+    }
+    .exp-pane_title {
+        padding: 10px 20px;
+    }
+    .group-fix label {
+        width: 24%;
+    }
+    .footer-info {
+        width: 100%;
+    }
+    .about-box .box__content {
+        width: 100%;
     }
 }
 
