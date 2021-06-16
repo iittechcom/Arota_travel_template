@@ -3,6 +3,8 @@ $bg-light: #fff;
 $bg-dark: #000;
 $bg-yellow: #FEB012;
 $bg-before: rgba(0, 0, 0, 0.87);
+$bg-before-line: rgba(0, 0, 0, 0.40);
+
 $bg-yellow_before: #e9a41986;
 $bg-light_before: #ffffff86;
 $text-yellow: #FEB012;
@@ -188,7 +190,7 @@ img {
         }
     }
     .content_section-title {
-        width: 50%;
+        width: 40%;
         margin: auto;
         clear: both;
         font-size: .9rem;
@@ -918,8 +920,8 @@ img {
 // article index
 .article_index {
     background: url(../image/background/cambodia_travel_guide_.png);
-    height: 130vh;
-    background-attachment: scroll;
+    height: 180vh;
+    background-attachment: fixed;
     position: relative;
     background-position: center center;
     &::before {
@@ -1006,6 +1008,47 @@ img {
     //     z-index: 0;
     //     height: 100%;
     // }
+}
+.article-project
+{
+    .row{
+        .col-md-6:nth-child(1){
+            padding-left: 0;
+        }
+        .col-md-6:nth-child(2)
+        {
+            padding-right: 0;
+        }
+        .item{
+            position: relative;
+            img{
+                height: 30vh;
+            }
+            .content
+            {
+                position: absolute;
+                width: 100%;
+                padding: 15px;
+                color: $text-light;
+                top: 50%;
+                height: 70px;
+                a{
+                    color: $text-yellow;
+                    font-size: 1rem;
+                    text-transform: inherit;
+                    
+                }
+                .desc{
+                    text-align: justify;
+                    height: 80px;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                }
+            }
+        }
+    }
 }
 
 #recevie_new {
@@ -1139,3 +1182,127 @@ footer {
         }
     }
 }
+//SUSTAINABILITY
+.banner_sustainability
+{
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    &::before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: $bg-before-line;
+        z-index: 1;
+        content: "";
+    }
+    img{
+        height: 50vh;
+        object-fit: cover;
+        width: 100%;
+    }
+    h2{
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+}
+
+.about_sustainability{
+    .img-content
+    {
+        position: relative;
+    
+      
+        .owl-ecotourism_image {
+            img{
+                height: 40vh;
+            }
+        }
+        .ecotoursrim_image_small{
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            bottom: 5px;
+            z-index: 1;
+            
+            a{
+                padding: 5px;
+                img{
+                    width: 120px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+    .owl-ecotourism_content
+    {
+        padding: 15px;
+        background: $bg-before-line;
+        height: 40vh;
+        .item{
+            h3{
+                padding: 15px 0px 0px;
+                line-height: 1;
+                font-size: 1.3rem;
+                font-weight: 700;
+                margin: 0;
+            }
+        }
+        .ct_destination
+        {
+            margin: 20px 0px;
+            a{
+                font-weight: bold;
+                margin-right: 7px;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 5px;
+                    right: -7px;
+                    width: 1px;
+                    height: 10px;
+                    background: #000;
+                    transform: rotate(20deg);
+                }
+                &:nth-last-child(1)::before
+                {
+                    content: "";
+                   background: transparent;
+                }
+            }
+      
+        }
+        .desc
+        {
+            max-height: 100px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            
+        }
+    }
+    .owl-nav
+    {
+        button.owl-prev{
+            position: absolute;
+            top: 0;
+            left: 90%;
+            color: $text-dark;
+           
+        }
+        button.owl-next{
+            position: absolute;
+            top: 0;
+            left: 95%;
+        }
+    
+    }
+   
+}
+
+
+// END SUSTAINABILITY
