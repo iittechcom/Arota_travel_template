@@ -557,8 +557,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center; }
+<<<<<<< HEAD
+=======
   .filter__bar .nav {
     width: 100%; }
+>>>>>>> ad07ef4d0d5a069090639249df6f5cda68c1ceef
 .filter__item {
   border-left: 1px solid #fff; }
   .filter__item:first-child {
@@ -1253,9 +1256,12 @@ select.hidden-arow {
 
   .filter__bar .container {
     flex-direction: column; }
+<<<<<<< HEAD
+=======
 
   .blog-content .container {
     flex-direction: row; }
+>>>>>>> ad07ef4d0d5a069090639249df6f5cda68c1ceef
 
   .filter__item .nav-link {
     padding: 8px 25px;
