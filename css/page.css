@@ -4,6 +4,12 @@ ul {
 a:hover {
   text-decoration: none; }
 
+select {
+  cursor: pointer; }
+  select:focus {
+    border: 0;
+    outline: 0; }
+
 h3 {
   font-size: 24px; }
 
@@ -565,10 +571,11 @@ img {
     font-size: 12px; }
   .filter__item .nav-link {
     padding: 10px 32px;
-    font-weight: 500; }
-    .filter__item .nav-link:hover {
-      background-color: #feb533;
-      color: #fff; }
+    font-weight: 500;
+    border: 0;
+    background: transparent; }
+  .filter__item select.nav-link {
+    background: url(../image/icon/caret-down.png) no-repeat right 0.8rem center/9px 10px; }
   .filter__item .dropdown-item:hover {
     background-color: #feb533;
     color: #fff; }
@@ -641,6 +648,13 @@ img {
   text-shadow: 0px 0px 2px #333; }
   .filter__ht--pos i {
     color: #feaf12; }
+
+select.hidden-arow {
+  -o-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
 
 .rating-symbol {
   margin: 0 3px; }
@@ -861,7 +875,8 @@ img {
 .exp-pane {
   padding: 40px 100px 30px; }
   .exp-pane:last-child {
-    padding: 40px 0 30px; }
+    padding: 40px 0 30px;
+    background-color: #ebebeb; }
   .exp-pane form {
     padding: 20px 100px; }
 .exp-pane_title {
@@ -896,7 +911,6 @@ img {
   border-radius: 100%; }
 
 .ed-content {
-  background-color: #ebebeb;
   margin-top: -22px; }
 
 #travel_info label {
@@ -943,7 +957,7 @@ img {
     color: #fff;
     border-radius: .25rem;
     font-size: 20px;
-    z-index: 1; }
+    z-index: 50; }
 
 /* ---- About meet ---- */
 .about-box {
@@ -1244,7 +1258,7 @@ img {
     flex-direction: row; }
 
   .filter__item .nav-link {
-    padding: 8px 29px;
+    padding: 8px 25px;
     border: 1px solid #fff; }
 
   #quick-search {
@@ -1255,6 +1269,9 @@ img {
 
   .exp_detail {
     margin: 0; }
+
+  .exp-pane {
+    padding: 40px 20px 30px; }
 
   .exp-pane form {
     padding: 20px 20px; }
@@ -1326,7 +1343,10 @@ img {
     width: 70%; }
 
   .blog-grid {
-    grid-template-areas: "item1" "item2" "item2" "item4" "item3" "item5"; } }
+    grid-template-areas: "item1" "item2" "item2" "item4" "item3" "item5"; }
+
+  .blog-content .container {
+    flex-direction: column; } }
 @media (max-width: 600px) {
   .owl-item.center .tour__item {
     width: 100%; }
