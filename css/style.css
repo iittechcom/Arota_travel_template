@@ -130,7 +130,7 @@ img {
       transform: translate(-50%, -15px);
       background: #FEB012; }
   .section-title .content_section-title {
-    width: 50%;
+    width: 40%;
     margin: auto;
     clear: both;
     font-size: .9rem; }
@@ -686,8 +686,8 @@ img {
 
 .article_index {
   background: url(../image/background/cambodia_travel_guide_.png);
-  height: 130vh;
-  background-attachment: scroll;
+  height: 180vh;
+  background-attachment: fixed;
   position: relative;
   background-position: center center; }
   .article_index::before {
@@ -752,6 +752,33 @@ img {
       .article_index .desc a:hover {
         text-decoration: none;
         color: #FEB012; }
+
+.article-project .row .col-md-6:nth-child(1) {
+  padding-left: 0; }
+.article-project .row .col-md-6:nth-child(2) {
+  padding-right: 0; }
+.article-project .row .item {
+  position: relative; }
+  .article-project .row .item img {
+    height: 30vh; }
+  .article-project .row .item .content {
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    top: 50%;
+    height: 70px; }
+    .article-project .row .item .content a {
+      color: #FEB012;
+      font-size: 1rem;
+      text-transform: inherit; }
+    .article-project .row .item .content .desc {
+      text-align: justify;
+      height: 80px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3; }
 
 #recevie_new {
   padding: 12px 100px;
@@ -853,3 +880,241 @@ footer {
             background: #FEB012; }
           .footer .coppy-right .content .link-cpy a:nth-last-child(1)::before {
             background: transparent; }
+
+.banner_sustainability {
+  height: 50vh;
+  overflow: hidden;
+  position: relative; }
+  .banner_sustainability::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    content: ""; }
+  .banner_sustainability img {
+    height: 50vh;
+    object-fit: cover;
+    width: 100%; }
+  .banner_sustainability h2 {
+    text-transform: uppercase;
+    font-size: 2rem; }
+
+.about_sustainability .img-content {
+  position: relative; }
+  .about_sustainability .img-content .owl-ecotourism_image img {
+    height: 40vh; }
+  .about_sustainability .img-content .ecotoursrim_image_small {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 5px;
+    z-index: 1; }
+    .about_sustainability .img-content .ecotoursrim_image_small a {
+      padding: 5px; }
+      .about_sustainability .img-content .ecotoursrim_image_small a img {
+        width: 120px;
+        height: 80px; }
+.about_sustainability .owl-ecotourism_content {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  height: 40vh; }
+  .about_sustainability .owl-ecotourism_content .item h3 {
+    padding: 15px 0px 0px;
+    line-height: 1;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0; }
+  .about_sustainability .owl-ecotourism_content .ct_destination {
+    margin: 20px 0px; }
+    .about_sustainability .owl-ecotourism_content .ct_destination a {
+      font-weight: bold;
+      margin-right: 7px;
+      position: relative; }
+      .about_sustainability .owl-ecotourism_content .ct_destination a::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        right: -7px;
+        width: 1px;
+        height: 10px;
+        background: #000;
+        transform: rotate(20deg); }
+      .about_sustainability .owl-ecotourism_content .ct_destination a:nth-last-child(1)::before {
+        content: "";
+        background: transparent; }
+  .about_sustainability .owl-ecotourism_content .desc {
+    max-height: 100px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; }
+.about_sustainability .owl-nav button.owl-prev {
+  position: absolute;
+  top: 0;
+  left: 90%;
+  color: #000; }
+.about_sustainability .owl-nav button.owl-next {
+  position: absolute;
+  top: 0;
+  left: 95%; }
+
+.crs_activities .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(12, 6vh);
+  grid-gap: 16px; }
+.crs_activities .item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px; }
+  .crs_activities .item::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    content: ""; }
+  .crs_activities .item img {
+    width: 100%;
+    height: 100%; }
+  .crs_activities .item .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    bottom: 70px;
+    left: 0;
+    transform: translate(0px, 100%);
+    z-index: 2;
+    color: #fff;
+    transition: all .5s ease; }
+    .crs_activities .item .content h3 {
+      text-align: center;
+      color: #fff;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      transition: all .5s ease; }
+    .crs_activities .item .content .desc {
+      display: none; }
+    .crs_activities .item .content .task {
+      display: flex;
+      justify-content: center; }
+      .crs_activities .item .content .task a {
+        width: 30px;
+        border: 1px solid #FEB012;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px; }
+  .crs_activities .item:hover .content {
+    bottom: 90%;
+    left: 0;
+    transform: translate(0px, 100%);
+    z-index: 2;
+    color: #fff;
+    transition: all .5s ease; }
+    .crs_activities .item:hover .content h3 {
+      color: #FEB012; }
+    .crs_activities .item:hover .content .desc {
+      display: block; }
+  .crs_activities .item:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/6; }
+  .crs_activities .item:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/7; }
+  .crs_activities .item:nth-child(3) {
+    grid-column: 3/4;
+    grid-row: 1/8; }
+  .crs_activities .item:nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 6/13; }
+  .crs_activities .item:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 7/13; }
+  .crs_activities .item:nth-child(6) {
+    grid-column: 3/4;
+    grid-row: 8/13; }
+
+.responsibilities_travel a:hover {
+  text-decoration: none; }
+.responsibilities_travel .item {
+  position: relative; }
+  .responsibilities_travel .item::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: transparent;
+    z-index: 1; }
+.responsibilities_travel img {
+  border-bottom: 3px solid #FEB012;
+  height: 250px;
+  z-index: 2; }
+.responsibilities_travel .desc {
+  border-bottom: 2px solid #000; }
+  .responsibilities_travel .desc h3 {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 15px 0px 15px 15px;
+    position: relative;
+    z-index: 1; }
+    .responsibilities_travel .desc h3::before {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 15px;
+      top: 50%;
+      left: 0;
+      transform: translate(0px, -5px);
+      background: #FEB012; }
+    .responsibilities_travel .desc h3:hover {
+      color: #FEB012; }
+  .responsibilities_travel .desc .content-desc {
+    padding: 15px 0px;
+    border-top: 2px solid #000;
+    height: 80px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: initial;
+    -webkit-line-clamp: 3; }
+  .responsibilities_travel .desc:hover {
+    color: #000; }
+  .responsibilities_travel .desc .details {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px; }
+    .responsibilities_travel .desc .details .btn-detail a {
+      padding: 8px 25px;
+      border-radius: 5px;
+      background-color: #FEB012;
+      transition: all .5s ease;
+      color: #fff;
+      text-transform: uppercase;
+      border: 1px solid #FEB012; }
+      .responsibilities_travel .desc .details .btn-detail a:hover {
+        background-color: #fff; }
+    .responsibilities_travel .desc .details .btn-share a img {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #FEB012; }
+
+.viewall {
+  width: 100%;
+  text-align: right;
+  padding: 5px 0px 15px 0px; }
+  .viewall a {
+    color: #FEB012;
+    font-weight: 600;
+    text-transform: uppercase; }

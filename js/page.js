@@ -58,4 +58,24 @@ $(document).ready(function() {
         $(this).addClass("b-white");
     })
 
+
+    /* Experiences datial page */
+
+
+    $(function() {
+        $('#arrival_date').daterangepicker({
+            singleDatePicker: true,
+            autoUpdateInput: false,
+            locale: {
+                cancelLabel: 'Clear'
+            }
+        });
+        $('#arrival_date').on('apply.daterangepicker', function(ev, picker) {
+            $(this).val(picker.startDate.format('DD/MM/YYYY'));
+        });
+
+        $('#arrival_date').on('cancel.daterangepicker', function(ev, picker) {
+            $(this).val('');
+        });
+    });
 })
