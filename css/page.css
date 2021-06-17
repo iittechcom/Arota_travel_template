@@ -73,12 +73,18 @@ img {
   margin-top: 40px; }
   .box__title {
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 20px;
-    font-weight: 700; }
+    font-weight: 700;
+    text-align: center; }
   .box__des {
     font-size: 15px;
     margin-bottom: 25px; }
+
+.sub-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px; }
 
 .nation__list {
   margin-bottom: 30px; }
@@ -545,6 +551,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center; }
+<<<<<<< HEAD
+=======
+  .filter__bar .nav {
+    width: 100%; }
+>>>>>>> ad07ef4d0d5a069090639249df6f5cda68c1ceef
 .filter__item {
   border-left: 1px solid #fff; }
   .filter__item:first-child {
@@ -943,17 +954,18 @@ img {
   .about-box .box__content {
     width: 80%;
     margin: 0 auto; }
-  .about-box [class*="col-"] {
-    padding-left: 10px;
-    padding-right: 10px; }
+
+.meet [class*="col-"] {
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .about_m-item {
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  border: 1px solid #cccccc; }
 .about_m-img img {
   height: 260px; }
 .about_m-des {
-  padding: 15px 10px 10px;
-  border: 1px solid #cccccc; }
+  padding: 15px 10px 10px; }
 .about-gallery {
   margin-bottom: 35px; }
 
@@ -989,16 +1001,15 @@ img {
   padding: 10px; }
 .about-trade .about_m-img {
   height: 260px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: #000; }
   .about-trade .about_m-img img {
     height: auto;
     max-height: 100%; }
+.about-trade [class*="col-"] {
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .about_m-des p {
   margin-bottom: 0; }
@@ -1010,6 +1021,162 @@ img {
   color: #000; }
   .Request-btn:hover {
     color: #fff; }
+
+/* ---- About cover ---- */
+.more-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.about-special {
+  padding: 40px 0;
+  position: relative;
+  background-image: url(../image/about/Aurora\ mokup4.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  color: #fff; }
+  .about-special::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.918); }
+
+.about-team_img {
+  height: 100%; }
+  .about-team_img img {
+    height: 100%; }
+
+.about-team_des {
+  background-color: #ebebeb;
+  height: 100%;
+  padding: 30px 25px;
+  text-align: justify;
+  font-size: 15px; }
+
+.special-link {
+  margin-bottom: 0; }
+  .special-link a {
+    line-height: 30px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    color: #feaf12;
+    margin-bottom: 10px;
+    transition: all 0.3s ease; }
+    .special-link a:last-child {
+      margin-bottom: 0; }
+    .special-link a:hover {
+      transition: all 0.3s ease;
+      border-color: #feaf12; }
+
+.view_more-btn {
+  padding: 5px 10px;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #000; }
+  .view_more-btn:hover {
+    color: #fff; }
+
+.at-trade-item {
+  border: 1px solid #cccccc; }
+
+/* ---- blog page ---- */
+.blog-content {
+  padding-top: 30px; }
+  .blog-content .filter__bar {
+    margin-bottom: 40px; }
+.blog__title {
+  text-align: left; }
+.blog-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 200px);
+  grid-template-areas: "item1 item2 item3" "item4 item2 item5";
+  gap: 20px 30px; }
+.blog-link {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+  color: #fff;
+  height: 100%; }
+  .blog-link:hover {
+    color: #fff; }
+    .blog-link:hover img {
+      transform: scale(1.1);
+      transition: all 0.3s linear; }
+  .blog-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.144);
+    z-index: 0; }
+.blog-item1 {
+  grid-area: item1; }
+.blog-item2 {
+  grid-area: item2; }
+.blog-item3 {
+  grid-area: item3; }
+.blog-item4 {
+  grid-area: item4; }
+.blog-item5 {
+  grid-area: item5; }
+.blog-img {
+  height: 100%;
+  overflow: hidden; }
+  .blog-img img {
+    height: 100%;
+    transition: all 0.3s linear; }
+.blog-des {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-shadow: 0px 0px 1px #000; }
+  .blog-des p {
+    font-size: 16px;
+    margin-bottom: 0px; }
+  .blog-des span {
+    display: block;
+    color: #c2c2c2; }
+
+.recent-list {
+  font-size: 16px;
+  padding-top: 10px; }
+.recent-item {
+  margin-bottom: 30px;
+  transition: all 0.3s ease; }
+  .recent-item:hover {
+    transform: translate3d(0, -10px, 0);
+    transition: all 0.3s ease; }
+.recent-note {
+  display: inline-block;
+  padding: 0 10px;
+  color: #000;
+  margin: 25px 0 30px;
+  font-weight: 400;
+  font-size: 14px; }
+  .recent-note:hover {
+    background-color: #f7941d; }
+.recent-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px; }
+.recent-time {
+  margin-bottom: 10px; }
+.recent-text {
+  line-height: 1.3;
+  padding-right: 10px; }
 
 /* ----- responsive -------------*/
 @media (min-width: 1200px) {
@@ -1075,6 +1242,12 @@ img {
 
   .filter__bar .container {
     flex-direction: column; }
+<<<<<<< HEAD
+=======
+
+  .blog-content .container {
+    flex-direction: row; }
+>>>>>>> ad07ef4d0d5a069090639249df6f5cda68c1ceef
 
   .filter__item .nav-link {
     padding: 8px 29px;
@@ -1114,7 +1287,13 @@ img {
     padding: 6px 6px; }
 
   .about-tab__img {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .at-trade-item {
+    margin-bottom: 25px; }
+
+  .blog-grid {
+    grid-template-areas: "item1 item2 " "item4 item2 " "item3 item5"; } }
 @media (max-width: 767px) {
   .box {
     margin-top: 20px; }
@@ -1150,7 +1329,10 @@ img {
     grid-row: auto; } }
 @media (max-width: 767px) {
   .exp__thumb-wp {
-    width: 70%; } }
+    width: 70%; }
+
+  .blog-grid {
+    grid-template-areas: "item1" "item2" "item2" "item4" "item3" "item5"; } }
 @media (max-width: 600px) {
   .owl-item.center .tour__item {
     width: 100%; }
