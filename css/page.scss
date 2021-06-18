@@ -23,6 +23,14 @@ a {
     }
 }
 
+select {
+    cursor: pointer;
+    &:focus {
+        border: 0;
+        outline: 0;
+    }
+}
+
 h3 {
     font-size: 24px;
 }
@@ -801,10 +809,11 @@ img {
         .nav-link {
             padding: 10px 32px;
             font-weight: 500;
-            &:hover {
-                background-color: #feb533;
-                color: #fff;
-            }
+            border: 0;
+            background: transparent;
+        }
+        select.nav-link {
+            background: url(../image/icon/caret-down.png) no-repeat right .8rem center/9px 10px;
         }
         .dropdown-item {
             &:hover {
@@ -899,6 +908,14 @@ img {
             color: $text-yellow;
         }
     }
+}
+
+select.hidden-arow {
+    -o-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .rating-symbol {
@@ -1204,6 +1221,7 @@ img {
         padding: 40px 100px 30px;
         &:last-child {
             padding: 40px 0 30px;
+            background-color: $bg-gray;
         }
         form {
             padding: 20px 100px;
@@ -1258,7 +1276,6 @@ img {
 }
 
 .ed-content {
-    background-color: $bg-gray;
     margin-top: -22px;
 }
 
@@ -1319,7 +1336,7 @@ img {
         color: #fff;
         border-radius: .25rem;
         font-size: 20px;
-        z-index: 1;
+        z-index: 50;
     }
 }
 
@@ -1714,7 +1731,7 @@ img {
         flex-direction: row;
     }
     .filter__item .nav-link {
-        padding: 8px 29px;
+        padding: 8px 25px;
         border: 1px solid #fff;
     }
     #quick-search {
@@ -1728,6 +1745,9 @@ img {
     }
     .exp_detail {
         margin: 0;
+    }
+    .exp-pane {
+        padding: 40px 20px 30px;
     }
     .exp-pane form {
         padding: 20px 20px;
@@ -1806,6 +1826,9 @@ img {
     }
     .blog-grid {
         grid-template-areas: "item1" "item2" "item2" "item4" "item3" "item5";
+    }
+    .blog-content .container {
+        flex-direction: column;
     }
 }
 
