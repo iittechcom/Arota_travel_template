@@ -38,3 +38,13 @@ $(".drop-aboutus .item").hover(function() {
     // $(".sroll-left li").hover(function() {
     //     $(this).toggleClass("active")
     // })
+      //using document ready...
+      $(document).ready(function(){
+
+        //initialising fullpage.js in the jQuery way
+        $('#fullpage').fullpage({
+            navigation: true,
+            slidesNavigation: true,
+        });
+
+    });

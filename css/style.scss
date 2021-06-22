@@ -169,7 +169,7 @@ img {
     padding: 0;
     margin: auto;
     text-align: center;
-    padding: 50px 0px 30px;
+    padding: 80px 0px 30px;
     position: relative;
     h2 {
         color: $text-yellow;
@@ -659,12 +659,13 @@ img {
     background: url(../image/background/bg-why_us.png);
     background-position: center 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;   
+    height: 100vh;
     .grid {
         display: grid;
         gap: 10px;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(10, 7vh);
         .item {
             position: relative;
             &:nth-child(1) {
@@ -733,6 +734,7 @@ img {
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: auto;
+    height: 100vh;
     position: relative;
     &::before {
         content: "";
@@ -749,8 +751,8 @@ img {
     .grid {
         display: grid;
         gap: 10px;
-        grid-template-columns: 33.3%, 33.3%, 33.3%;
-        grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+        grid-template-columns: repeat(3, 33.3%);
+        grid-template-rows: repeat(13, 4vh);
         .item {
             position: relative;
             &:nth-child(1) {
@@ -811,7 +813,7 @@ img {
 
 // experience
 .experience {
-    padding-bottom: 100px;
+
     .container-f {
         overflow: hidden;
     }
@@ -920,7 +922,7 @@ img {
 // article index
 .article_index {
     background: url(../image/background/cambodia_travel_guide_.png);
-    height: 180vh;
+    height: 100vh;
     background-attachment: fixed;
     position: relative;
     background-position: center center;
@@ -1523,3 +1525,14 @@ footer {
 
 }
 // END SUSTAINABILITY
+.section{
+    height: 100vh;
+  
+}
+.about_index, .type-tours, .destination,  .article_index{
+    padding-top: 5vh;
+}
+
+.fp-viewing-5 .header .menu, .fp-viewing-4 .header .menu, .fp-viewing-2 .header .menu{
+    background-color: #000;
+}

@@ -2,6 +2,8 @@ $('.owl-banner').owlCarousel({
     loop: true,
     nav: true,
     dots: false,
+    margin:0,
+    stagePadding:0,
     navText: ["<i class='fal fa-chevron-left'></i>", "<i class='fal fa-chevron-right'></i>"],
     responsive: {
         0: {
@@ -12,6 +14,9 @@ $('.owl-banner').owlCarousel({
         },
         1000: {
             items: 1,
+        },
+        1900:{
+            items:1
         }
     }
 })

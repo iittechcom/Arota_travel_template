@@ -111,7 +111,7 @@ img {
   padding: 0;
   margin: auto;
   text-align: center;
-  padding: 50px 0px 30px;
+  padding: 80px 0px 30px;
   position: relative; }
   .section-title h2 {
     color: #FEB012;
@@ -486,12 +486,13 @@ img {
   background: url(../image/background/bg-why_us.png);
   background-position: center 100%;
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: 100%;
+  height: 100vh; }
   .about_index .grid {
     display: grid;
     gap: 10px;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px; }
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(10, 7vh); }
     .about_index .grid .item {
       position: relative;
       overflow: hidden; }
@@ -545,6 +546,7 @@ img {
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: auto;
+  height: 100vh;
   position: relative; }
   .type-tours::before {
     content: "";
@@ -559,8 +561,8 @@ img {
   .type-tours .grid {
     display: grid;
     gap: 10px;
-    grid-template-columns: 33.3%, 33.3%, 33.3%;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px; }
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(13, 4vh); }
     .type-tours .grid .item {
       position: relative; }
       .type-tours .grid .item:nth-child(1) {
@@ -602,91 +604,89 @@ img {
           font-size: 30px;
           margin-bottom: 15px; }
 
-.experience {
-  padding-bottom: 100px; }
-  .experience .container-f {
-    overflow: hidden; }
-  .experience .p-0 {
-    overflow: hidden; }
-  .experience a:hover {
-    text-decoration: none;
+.experience .container-f {
+  overflow: hidden; }
+.experience .p-0 {
+  overflow: hidden; }
+.experience a:hover {
+  text-decoration: none;
+  color: #000; }
+.experience .owl-item {
+  width: 230px !important; }
+  .experience .owl-item .item {
+    position: relative; }
+    .experience .owl-item .item::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background: #ffffff86;
+      z-index: 1; }
+.experience .owl-item.active.center {
+  width: 300px !important;
+  transition: all .5s ease-in; }
+  .experience .owl-item.active.center .item {
+    position: relative; }
+    .experience .owl-item.active.center .item::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background: transparent;
+      z-index: 1; }
+  .experience .owl-item.active.center img {
+    border-bottom: 3px solid #FEB012; }
+.experience .owl-stage-outer {
+  overflow: visible !important; }
+.experience .owl-item {
+  transition: all .5s ease-in; }
+  .experience .owl-item img {
+    height: 250px; }
+  .experience .owl-item .desc h3 {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 15px 0px 15px 15px;
+    position: relative; }
+    .experience .owl-item .desc h3::before {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 15px;
+      top: 50%;
+      left: 0;
+      transform: translate(0px, -5px);
+      background: #FEB012; }
+    .experience .owl-item .desc h3:hover {
+      color: #FEB012; }
+  .experience .owl-item .desc .content-desc {
+    padding: 15px 0px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    height: 80px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: initial;
+    -webkit-line-clamp: 3; }
+.experience .owl-next {
+  right: -25%;
+  top: 30%; }
+  .experience .owl-next i {
     color: #000; }
-  .experience .owl-item {
-    width: 230px !important; }
-    .experience .owl-item .item {
-      position: relative; }
-      .experience .owl-item .item::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        content: "";
-        background: #ffffff86;
-        z-index: 1; }
-  .experience .owl-item.active.center {
-    width: 300px !important;
-    transition: all .5s ease-in; }
-    .experience .owl-item.active.center .item {
-      position: relative; }
-      .experience .owl-item.active.center .item::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        content: "";
-        background: transparent;
-        z-index: 1; }
-    .experience .owl-item.active.center img {
-      border-bottom: 3px solid #FEB012; }
-  .experience .owl-stage-outer {
-    overflow: visible !important; }
-  .experience .owl-item {
-    transition: all .5s ease-in; }
-    .experience .owl-item img {
-      height: 250px; }
-    .experience .owl-item .desc h3 {
-      text-transform: uppercase;
-      padding: 0;
-      margin: 0;
-      font-size: 1.05rem;
-      font-weight: 700;
-      padding: 15px 0px 15px 15px;
-      position: relative; }
-      .experience .owl-item .desc h3::before {
-        content: "";
-        position: absolute;
-        width: 7px;
-        height: 15px;
-        top: 50%;
-        left: 0;
-        transform: translate(0px, -5px);
-        background: #FEB012; }
-      .experience .owl-item .desc h3:hover {
-        color: #FEB012; }
-    .experience .owl-item .desc .content-desc {
-      padding: 15px 0px;
-      border-top: 2px solid #000;
-      border-bottom: 2px solid #000;
-      height: 80px;
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-box-orient: initial;
-      -webkit-line-clamp: 3; }
-  .experience .owl-next {
-    right: -25%;
-    top: 30%; }
-    .experience .owl-next i {
-      color: #000; }
-  .experience .owl-prev {
-    top: 30%; }
-    .experience .owl-prev i {
-      color: rgba(0, 0, 0, 0.87); }
+.experience .owl-prev {
+  top: 30%; }
+  .experience .owl-prev i {
+    color: rgba(0, 0, 0, 0.87); }
 
 .article_index {
   background: url(../image/background/cambodia_travel_guide_.png);
-  height: 180vh;
+  height: 100vh;
   background-attachment: fixed;
   position: relative;
   background-position: center center; }
@@ -1118,3 +1118,12 @@ footer {
     color: #FEB012;
     font-weight: 600;
     text-transform: uppercase; }
+
+.section {
+  height: 100vh; }
+
+.about_index, .type-tours, .destination, .article_index {
+  padding-top: 5vh; }
+
+.fp-viewing-5 .header .menu, .fp-viewing-4 .header .menu, .fp-viewing-2 .header .menu {
+  background-color: #000; }

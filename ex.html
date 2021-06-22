@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jQuery Adapter - fullPage.js</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+ 
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../dist/fullpage.js"></script>
+
+    <script type="text/javascript">
+        //using document ready...
+        $(document).ready(function(){
+
+            //initialising fullpage.js in the jQuery way
+            $('#fullpage').fullpage({
+                navigation: true,
+                slidesNavigation: true,
+            });
+
+        });
+    </script>
+
+
+</head>
+<body>
+
+
+<div id="fullpage">
+    <div class="section">
+        <div class="intro">
+            <h1>jQuery adaptor</h1>
+            <p>You can use fullpage.js as a jQuery plugin!</p>
+            <p>Read <a href="https://github.com/alvarotrigo/fullPage.js#initialization">the docs</a> for more info!</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="slide"><h1>Section 2.1</h1></div>
+        <div class="slide"><h1>Section 2.2</h1></div>
+        <div class="slide"><h1>Section 2.3</h1></div>
+    </div>
+    <div class="section">
+        <h1>Section 3</h1>
+    </div>
+    <div class="section">
+        <h1>Section 4</h1>
+    </div>
+</div>
+
+
+
+</body>
+</html>
